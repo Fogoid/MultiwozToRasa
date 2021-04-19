@@ -1,9 +1,9 @@
 class Task():
-    def __init__(self, name, utterance):
+    def __init__(self, name):
         self.name = name
         self.slots = {}
         self.n_dialogues = 0
-        self.utterances = [utterance]
+        self.mandatory = []
 
     def addSlotCount(self, slots):
         self.n_dialogues += 1
@@ -13,17 +13,8 @@ class Task():
             else:
                 self.slots[slot] = 1
                 
-    def getSlotDefinitions(self):
-        mandatory = []
-        optional = []
-
-        for slot in self.slots.keys():
-            if self.slots[slot] / self.n_dialogues >= 0.90:
-                mandatory += [slot,]
-            else:
-                optional += [slot,]
-
-        return mandatory, optional
+    def computeSlots(self):
+        self.mandatory = list(filter(lambda x: self.slots[x] / self.n_dialogues >= 0.75, self.slots))
 
     def __eq__(self, other):
         return self.name == other.name
