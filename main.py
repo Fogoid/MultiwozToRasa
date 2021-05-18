@@ -54,10 +54,7 @@ def getBestIntent(current, slots):
 # SLOTS: { "service_1" : [slot_1, slot_2, ..., slot_n], "service_2" : [slot_1, slot_2, ..., slot_n], ..., "service_m" : [slot_1, slot_2, ..., slot_n]}
 def getTurnSlots(previous_slots, current_frame, lt_frames=None):
     slots = {}
-    for cf in current_frame:
-        if cf["state"]["active_intent"] == "NONE":
-            continue
-        
+    for cf in current_frame:        
         service = cf["service"]
         previous_service_slots = previous_slots[service] if service in previous_slots.keys() else []
         new_slots = []
@@ -79,7 +76,14 @@ def getRequestedSlots(current):
     for cf in current:
         requested += cf["state"]["requested_slots"]
     return requested
-        
+
+def isPresent(slot_list, slot):
+    for s in slot_list:
+        if type(s) is tuple and s[0] == slot:
+            return True
+        elif s == slot:
+            return True
+    return False 
 
 ####################################################
 #                CONTROL VARIABLES                 #
@@ -88,7 +92,7 @@ def getRequestedSlots(current):
 # variaveis necessárias para o dominio
 intents = { 
     "inform" : Task("inform"), 
-    "request" : Task("request"), 
+    # "request" : Task("request"), 
     "goodbye": Task("goodbye"), 
     "dont_know" : Task("dont_know") 
     }
@@ -104,16 +108,19 @@ last_frame = {}
 frame_slots = {}
 last_turn = None
 
+time_regex = r"(\d){2}:(\d){2}"
+number_regex = r"(\d+)"
+
 ####################################################
 #                   DIALOGUES LOAD                 #
 ####################################################
 
 # Carregar diálogos dos ficheiros do multiwoz
 json_file = []
-with open("resourses\\multiwoz\\dev\\dialogues_001.json") as f:
+with open("resources\\multiwoz\\dev\\dialogues_001.json") as f:
     json_file += json.load(f)
 
-with open("resourses\\multiwoz\\dev\\dialogues_002.json") as f:
+with open("resources\\multiwoz\\dev\\dialogues_002.json") as f:
     json_file += json.load(f)
 
 ####################################################
@@ -125,6 +132,7 @@ for item in json_file:
     current_intent = ""
     this_turn_slots = {}
     verified_intents = []
+    last_turn = None
 
     for turn in item["turns"]:
         # Só se preocupa com as falas do utilizador
@@ -155,15 +163,23 @@ for item in json_file:
                 AddIntent(current_intent)
                 intent_frame = next(filter(lambda x: x["state"]["active_intent"] == current_intent, last_turn["frames"]))
                 
-                slots += list(filter(lambda x: x not in slots, intent_frame["state"]["slot_values"].keys()))
+                ns = list(filter(lambda x: not isPresent(slots, x), intent_frame["state"]["slot_values"].keys()))
+                for i in range(len(ns)):
+                    sv = intent_frame["state"]["slot_values"][ns[i]][0]
+                    if re.search(time_regex, sv) != None:
+                        ns[i] = (ns[i], time_regex)
+                    elif re.search(number_regex, sv) != None:
+                        ns[i] = (ns[i], number_regex)
+                       
+                slots += ns
                 intents[current_intent].addSlotCount(list(intent_frame["state"]["slot_values"].keys()))
 
             current_intent = turn_best_intent
 
-        requested_slots = getRequestedSlots(turn["frames"])
-        if requested_slots != []:
-            chosen_intents += ["request",]
-            utterance = findRequestedSlotsInUtterance(requested_slots, utterance)
+        # requested_slots = getRequestedSlots(turn["frames"])
+        # if requested_slots != []:
+        #     chosen_intents += ["request",]
+        #     utterance = findRequestedSlotsInUtterance(requested_slots, utterance)
 
         # Encontrar os valores dos slots na utterance
         frames = list(filter(lambda x: x["service"] in this_turn_slots.keys(), turn["frames"]))
@@ -175,14 +191,23 @@ for item in json_file:
                 for val in slot_values:
                     pattern = re.compile(val, flags=re.IGNORECASE)
                     result = pattern.search(utterance)
-                    if result != None:                            
-                        remainder = utterance[result.lastindex:].split()[0]
-                        if ")" in remainder or "]" in remainder:
-                            continue
-
-                        replaceable = "[{}]({})".format(val, slot)
-                        utterance = pattern.sub(replaceable, utterance)
-                        break
+                    if result != None:
+                        for r in result.regs:
+                            previous_letter = utterance[r[0] - 1] if r[0] != 0 else " "
+                            next_letter = utterance[r[1]] if r[1] < len(utterance) else " "
+                            if previous_letter != " ":
+                                continue
+                            elif re.search(r"[a-zA-Z]", next_letter, re.IGNORECASE) != None:
+                                while r[1] < len(utterance) and utterance[r[1]] not in [" ", ".", ",", "?"]:
+                                    r = (r[0], r[1] + 1)
+                                AddSynonim(val, utterance[r[0]:r[1]])
+                                val = utterance[r[0]:r[1]]
+                            elif next_letter not in [" ", ".", ",", "?"]:
+                                continue
+                            
+                            replaceable = "[{}]({})".format(val, slot)
+                            utterance = utterance[:r[0]] + replaceable + utterance[r[1]:]
+                            break
 
         # Get multiple intent classification
         if chosen_intents[0] == "NONE":
@@ -202,11 +227,14 @@ for item in json_file:
         turn["intent_key"] = turn_intent_key
         training_data[turn_intent_key] = [utterance,] if turn_intent_key not in training_data.keys() else training_data[turn_intent_key] + [utterance,]
 
+
+        turn["utterance_slots"] = this_turn_slots
         last_turn = turn
 
 # Computa os slots obrigatórios para uma task ser dada como completa
 for i in intents.values():
     i.computeSlots()
+    print(i.mandatory)
 
 # ####################################################
 # #         RESPONSES AND ACTIONS DEFINITION         #
@@ -255,6 +283,12 @@ for item in json_file:
                         responses += [action,]
                 
                 story += ["  - intent: {}\n".format(turn["intent_key"]),]
+                if turn["utterance_slots"] != {}:
+                    story += ["    entities:\n",]
+                    for s in turn["utterance_slots"].keys():
+                        sls = next(filter(lambda x: x["service"] == s, turn["frames"]))["state"]["slot_values"]
+                        for slot in turn["utterance_slots"][s]:
+                            story += ["    - {}: {}\n".format(slot, sls[slot][0])]
                 story += ["  - action: {}\n".format(action),]
             
             if "request" in turn["chosen_intents"]:
@@ -273,6 +307,8 @@ del intents["dont_know"]
 del training_data["dont_know"]
 del intents["NONE"]
 
+print(slots)
+
 # Escrever o domain
 # Os slots estão a ser considerados como entidades
 with open("Model\\domain.yml", "w") as f:
@@ -287,8 +323,12 @@ with open("Model\\domain.yml", "w") as f:
     slot_string = "\nslots:\n"
 
     for slot in slots:
-        entities += "  - {}\n".format(slot)
-        slot_string += "  {}:\n    type: text\n".format(slot)
+        slot_value = slot
+        if type(slot) is tuple:
+            slot_value = slot[0]
+        
+        entities += "  - {}\n".format(slot_value)
+        slot_string += "  {}:\n    type: text\n".format(slot_value)
     
     entities += "  - required_info\n"
 
@@ -305,6 +345,12 @@ with open("Model\\domain.yml", "w") as f:
 # Escrever a nlu
 with open("Model\\data\\nlu.yml", "w") as f:
     nlu = "version: \"2.0\"\n\nnlu:\n"
+
+    for slot in slots:
+        if type(slot) is not tuple:
+            continue
+        nlu += "- regex: {}\n  examples: |\n    - {}\n\n".format(slot[0], slot[1])
+
     for i in training_data.keys():
         nlu += '- intent: {}\n  examples: |\n'.format(i)
         for example in training_data[i]:
@@ -313,7 +359,7 @@ with open("Model\\data\\nlu.yml", "w") as f:
 
     synonims_string = ""
     for s in synonims.keys():
-        synonims_string += "\n- synonim: {}\n  examples: |\n".format(s)
+        synonims_string += "\n- synonym: {}\n  examples: |\n".format(s)
         for syn in synonims[s]:
             synonims_string += "    - {}\n".format(syn)
 
