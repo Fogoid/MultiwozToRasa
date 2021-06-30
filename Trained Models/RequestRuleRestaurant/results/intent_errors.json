@@ -1,0 +1,250 @@
+[
+  {
+    "text": "Are there any portuguese restaurants in Cambridge?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9996144771575928
+    }
+  },
+  {
+    "text": "I would like to try saigon city",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Yes  I hope so  Are there any chinese restaurants toward the east end of town?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9997932314872742
+    }
+  },
+  {
+    "text": "I'm looking for an indian restaurant  preferably in the centre of town",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.997005045413971
+    }
+  },
+  {
+    "text": "Hi there  I'm hoping you can help me  I am looking to try molecular gastronomy food  Might there be a restaurant like this in the centre of town?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.983963668346405
+    }
+  },
+  {
+    "text": "I'm looking for a restaurant in the centre of town with a modest price range  Can you recommend one?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8749069571495056
+    }
+  },
+  {
+    "text": "What restaurants in the centre serve international cuisine?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9874985814094543
+    }
+  },
+  {
+    "text": "I would like to go to an indian restaurant in the north",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9983362555503845
+    }
+  },
+  {
+    "text": "I really don't have a preference  How about chinese? I will need their phone number and postcode please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9647887945175171
+    }
+  },
+  {
+    "text": "I would like a table at 14:00 on Wednesday for 5 people",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Do they have an opening at 13:00 on Wednesday for 5 people?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.993415892124176
+    }
+  },
+  {
+    "text": "Try a different cuisine  Just an expensive restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.7565150260925293
+    }
+  },
+  {
+    "text": "indian food please  What are the options?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.39934274554252625
+    }
+  },
+  {
+    "text": "No  I'll have to discuss it with my wife  Can you just get me the postcode for maharajah tandoori please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9999995231628418
+    }
+  },
+  {
+    "text": "I am looking for something expensive",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6457884311676025
+    }
+  },
+  {
+    "text": "I don't care about the price range  However  I need to confirm that the restaurant serves British food and is in the centre of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9721894860267639
+    }
+  },
+  {
+    "text": "Yes  may I have the address  postcode  and phone number for golden house? I'll book it myself",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Will you give me the phone number  address  and postcode for graffiti  please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Is there anywhere that serves middle eastern food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.986989438533783
+    }
+  },
+  {
+    "text": "Is there anywhere in the centre that serves mediterranean food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9941946864128113
+    }
+  },
+  {
+    "text": "I would like a restaurant in the centre",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8884665369987488
+    }
+  },
+  {
+    "text": "For 4 people at 15:15 on either monday or Saturday please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Yes  I would like eat indian food  where I can eat Search Chicken Tikka Masala",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9990715384483337
+    }
+  },
+  {
+    "text": "I'm looking for an expensive eastern european place in the south",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I'd like to make a reservation for saturday at 11:45  And there has been a change in plans  I will be dining alone",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "I am not particular  how about moderate? I will need their phone number  address and postcode please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.999996542930603
+    }
+  },
+  {
+    "text": "Will do",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999992847442627
+    }
+  },
+  {
+    "text": "Can we do saturday at 15:00?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "16:30 please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "Only the best for my family    we'll take the expensive one  Book us a table for 5 at 14:00 on thursday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999829530715942
+    }
+  },
+  {
+    "text": "Never mind  I'm all set  I even have the reference number for my reservation  Thanks for your help - goodbye!",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 1.0
+    }
+  }
+]

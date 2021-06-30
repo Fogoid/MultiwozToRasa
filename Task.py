@@ -14,7 +14,7 @@ class Task():
                 self.slots[slot] = 1
                 
     def computeSlots(self):
-        self.mandatory = list(filter(lambda x: self.slots[x] / self.n_dialogues >= 0.75, self.slots))
+        self.mandatory = list(filter(lambda x: self.slots[x] / self.n_dialogues >= 0.8, self.slots))
 
     def __eq__(self, other):
         return self.name == other.name

@@ -1,4 +1,5 @@
 from typing import Any, Text, Dict, List
+from typing_extensions import ParamSpecKwargs
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
@@ -437,4 +438,36 @@ class ActionFindHospital(Action):
 
         return []
             
+class ActionGetRequestedInfo(Action):
+
+    def name(self) -> Text:
+        return "action_get_requested_info"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        name = tracker.get_slot("restaurant-name")
+        if name != None:
+            all_info = list(tracker.get_latest_entity_values("requested_info"))
+            if all_info == []:
+                dispatcher.utter_message(text = "Sorry. I didn't understand what you are asking for")
+                return []
+
+            for info in all_info:
+                try:
+                    if re.search(r"reference", info, re.IGNORECASE) != None:
+                        with open("resources\\database\\reservation_db.json") as f:
+                            reservation = list(filter(lambda x: x["name"] == name, json.load(f)))[-1]
+                            dispatcher.utter_message(text = "The reference is {}.".format(reservation))
+                    else:
+                        with open("resources\\database\\restaurant_db.json") as f:
+                            restaurant = next(filter(lambda x: re.search(name, x["name"], re.IGNORECASE) != None, json.load(f)))
+                            key = "".join("", info.split(" "))
+                            dispatcher.utter_message(text = "The {} is {}".format(info, restaurant[key]))
+                except StopIteration:
+                    break
+        else:
+            dispatcher.utter_message(text = "Sorry. But you need to tell me the name of the restaurant you want information from.")
+
+
         

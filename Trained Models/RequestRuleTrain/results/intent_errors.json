@@ -1,0 +1,4722 @@
+[
+  {
+    "text": "I need to leave peterborough and arrive by 20:45  Can you book a train for me?",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5242112874984741
+    }
+  },
+  {
+    "text": "I need it to leave from cambridge and arrive at 13:45 at london liverpool street on a sunday",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9770063161849976
+    }
+  },
+  {
+    "text": "The train should go to birmingham new street and should leave on wednesday",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9953222870826721
+    }
+  },
+  {
+    "text": "Great  I need to go to london liverpool street",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9371881484985352
+    }
+  },
+  {
+    "text": "How long is the ride?",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8624295592308044
+    }
+  },
+  {
+    "text": "i will be departing from Cambridge on tuesday after 16:30 going to london kings cross",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9916568994522095
+    }
+  },
+  {
+    "text": "Going to cambridge and leaving anytime after 12:30",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9989152550697327
+    }
+  },
+  {
+    "text": "leaving cambridge on sunday",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9937508702278137
+    }
+  },
+  {
+    "text": "I would like to leave on saturday and go to ely",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9997166395187378
+    }
+  },
+  {
+    "text": "I am planning a visit to Cambridge very soon and need some information about types of lodging available",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.639992892742157
+    }
+  },
+  {
+    "text": "I will leave cambridge and go to kings lynn",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9996738433837891
+    }
+  },
+  {
+    "text": "From cambridge to london liverpool street",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9633373618125916
+    }
+  },
+  {
+    "text": "I would like to leave after 8:30 on Sunday",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9981386661529541
+    }
+  },
+  {
+    "text": "No on the hotel  What is the train id for that one  and how long is the travel time",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.996795117855072
+    }
+  },
+  {
+    "text": "Where is the train that arrives at 11:00 and leaves to cambridge?",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8123940825462341
+    }
+  },
+  {
+    "text": "I need the train to go to broxbourne",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9929996132850647
+    }
+  },
+  {
+    "text": "I would like to arrive in broxbourne by 09:15 from Cambridge  I will need a departure time too  please",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9923903346061707
+    }
+  },
+  {
+    "text": "Hi  I'm looking for a restaurant suggestion in Cambridge",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9542726874351501
+    }
+  },
+  {
+    "text": "Any time will do  as long as it leaves after 13:15",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7854222655296326
+    }
+  },
+  {
+    "text": "What train do I take to get to birmingham new street? I need to leave after 17:00",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7678987383842468
+    }
+  },
+  {
+    "text": "Yes  but first can we work out the train details? I still need more info on that TR4975 train  What's the departure time and travel time on that?",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.5137133598327637
+    }
+  },
+  {
+    "text": "I need to go to broxbourne on monday",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9913355112075806
+    }
+  },
+  {
+    "text": "I still need the price for the train",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9925941824913025
+    }
+  },
+  {
+    "text": "No  I think that this trip to Cambridge will make my wildest dreams come true  Thanks for helping me make it happen",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8524471521377563
+    }
+  },
+  {
+    "text": "Hi  could you tell me some attractions in Cambridge?",
+    "intent": "find_train",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.7503340244293213
+    }
+  },
+  {
+    "text": "I have an upcoming conference in cambridge and need to figure out transportation  Can you tell me about a train to take maybe?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9997640252113342
+    }
+  },
+  {
+    "text": "I need a reservation for 4 nights starting saturday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9943223595619202
+    }
+  },
+  {
+    "text": "3 people  Can I get the reference number please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9770568609237671
+    }
+  },
+  {
+    "text": "I may have been confusing you  Could you try and book a 4 star  expensive hotel for 3 nights  starting on saturday? 3 people  Wifi please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9924958348274231
+    }
+  },
+  {
+    "text": "Yes please  I need the booking for 8 people  and I would like a reference number",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9972734451293945
+    }
+  },
+  {
+    "text": "no I just need free internet  I also need the price range  address  and postcode of the one you find",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9764548540115356
+    }
+  },
+  {
+    "text": "I would like to book the 5:11 train",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.696997344493866
+    }
+  },
+  {
+    "text": "I need at a train that leaves after 12:30",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9853477478027344
+    }
+  },
+  {
+    "text": "yes  i need a 4 star hotel that also includes free wifi",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9914766550064087
+    }
+  },
+  {
+    "text": "I need to get to the parkside police station  My boyfriend got himself arrested  again!",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_police",
+      "confidence": 0.992579460144043
+    }
+  },
+  {
+    "text": "Could you book me a room at The alexander bed and breakfast for 6 people and 2 nights starting from friday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9998044967651367
+    }
+  },
+  {
+    "text": "I need an expensive hotel that includes free parking",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.924137532711029
+    }
+  },
+  {
+    "text": "I'm looking for a pizza hut city centre",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999624490737915
+    }
+  },
+  {
+    "text": "I would like to find a train first  I need one on sunday going to kings lynn",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9993754029273987
+    }
+  },
+  {
+    "text": "I actually need to have the taxi pick me up from the hotel to get to the restaurant  I want to leave the hotel by 07:15  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.5155475735664368
+    }
+  },
+  {
+    "text": "I am sorry  I meant a trip into kings lynn  I am coming from cambridge and looking for a train",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8383777737617493
+    }
+  },
+  {
+    "text": "Before I forget  I need the reference number for the train booking  Also  I am looking for attractions in the south part of town  maybe something outdoors  if possible",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9798794388771057
+    }
+  },
+  {
+    "text": "I'm coming into stansted airport and i want to go to cambridge  Is there a train for that?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9591720104217529
+    }
+  },
+  {
+    "text": "I want a hotel",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.7207105159759521
+    }
+  },
+  {
+    "text": "I need a train to arrive by 21:15 on friday going to cambridge",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8608700633049011
+    }
+  },
+  {
+    "text": "Is it a hotel or guesthouse? I also need a train leaving cambridge",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9579347372055054
+    }
+  },
+  {
+    "text": "I want to go to a museum",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9709213972091675
+    }
+  },
+  {
+    "text": "Are there any cinemas? If there isn't what about something that has to do with multiple sports?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.953036367893219
+    }
+  },
+  {
+    "text": "Sure  look for a cheap restaurant  And I prefer the west if possible",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.5298905968666077
+    }
+  },
+  {
+    "text": "I would like to dine in a cheap chinese food restaurant that is located in the south  Can you help me find one?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9986830353736877
+    }
+  },
+  {
+    "text": "I suppose a museum would do as well  Any recommendations for museums west of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.976302444934845
+    }
+  },
+  {
+    "text": "I would like to book it for 5 people at 15:30 on the same day as the train  thursday  Can I also get the reference number for that as well?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9718459248542786
+    }
+  },
+  {
+    "text": "No museums  what colleges are there around town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9976373314857483
+    }
+  },
+  {
+    "text": "Yes  that's why I'm requesting help from cambridge TownInfo",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8933752179145813
+    }
+  },
+  {
+    "text": "give me information on cherry hinton hall and grounds",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9998500347137451
+    }
+  },
+  {
+    "text": "Okay  Can you search for some entertainment in the south part of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9009700417518616
+    }
+  },
+  {
+    "text": "Yes  can you tell me about the kettle's yard? What is the address and entrance fee?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9322723150253296
+    }
+  },
+  {
+    "text": "It's called cambridge lodge restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9997758865356445
+    }
+  },
+  {
+    "text": "I'm craving some international food  Can you point me in the right direction? I'm looking to eat somewhere in the east area of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999991655349731
+    }
+  },
+  {
+    "text": "Are there any multiple sports attractions in the same area?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9931430816650391
+    }
+  },
+  {
+    "text": "Could you book a taxi at 12:30?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9987843036651611
+    }
+  },
+  {
+    "text": "7 5 nights starting from tuesday  need the reference number too please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.7632254362106323
+    }
+  },
+  {
+    "text": "It is called maharajah tandoori restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9849643111228943
+    }
+  },
+  {
+    "text": "What area is the funky fun house located?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.4783673882484436
+    }
+  },
+  {
+    "text": "There will be 7 of us  Can you please give me the reference number as well?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.8256216049194336
+    }
+  },
+  {
+    "text": "No thank you  I do need to book a train departing from cambridge though",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9985285997390747
+    }
+  },
+  {
+    "text": "I would like to book a table at 9:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.823268473148346
+    }
+  },
+  {
+    "text": "Yes  I would like a reservation on Friday at 10:45 for 8 people",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.7442407011985779
+    }
+  },
+  {
+    "text": "i want to book it for 8 people and 5 nights starting from wednesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9967981576919556
+    }
+  },
+  {
+    "text": "I want a chinese restaurant in the south",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8054488301277161
+    }
+  },
+  {
+    "text": "Tell me the postcode for the cheap restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.5483021140098572
+    }
+  },
+  {
+    "text": "I'm going to need a taxi at the hotel first  I'll be leaving the hotel at 19:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9998090267181396
+    }
+  },
+  {
+    "text": "What's the last train that gets to Kings Lynn by 18:15 friday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9034125804901123
+    }
+  },
+  {
+    "text": "No  thanks  I'm thinking I want to visit a college",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9857099652290344
+    }
+  },
+  {
+    "text": "I'm looking for cambridge",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_bus",
+      "confidence": 0.7942826151847839
+    }
+  },
+  {
+    "text": "Are there any trains that leave on thursday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9946566820144653
+    }
+  },
+  {
+    "text": "friday  17:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.590175211429596
+    }
+  },
+  {
+    "text": "I would like to book a table for 3 on saturday at 13:30  Are there any trains that go to broxbourne on sunday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.999127209186554
+    }
+  },
+  {
+    "text": "I'm looking for a place that serves jamaican food in the east  If not  italian will do",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9990708827972412
+    }
+  },
+  {
+    "text": "I wish to go to cambridge on a wednesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9389634728431702
+    }
+  },
+  {
+    "text": "Thank you! Can you help me find a train for monday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9998553395271301
+    }
+  },
+  {
+    "text": "yes please  7 people  And I'd like the reference number please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9946474432945251
+    }
+  },
+  {
+    "text": "Great! Can you also help me with a place to go in town  I would like it to be in the centre",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9992929697036743
+    }
+  },
+  {
+    "text": "Tell me some restaurant types in the town centre?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9950137138366699
+    }
+  },
+  {
+    "text": "Could you please find me an italian restaurant in the centre?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9997298717498779
+    }
+  },
+  {
+    "text": "A museum sounds good can I get the phone number and entrance fee of one?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.6426194906234741
+    }
+  },
+  {
+    "text": "No  it will be me and a friend  We will be staying for 5 nights and arriving on Monday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8227296471595764
+    }
+  },
+  {
+    "text": "Yes  I am looking for a tuesday train",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9997323751449585
+    }
+  },
+  {
+    "text": "Are there any that serve irish food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.677581787109375
+    }
+  },
+  {
+    "text": "I am looking for a restaurant that serves polish food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9998834133148193
+    }
+  },
+  {
+    "text": "i need a cheap restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999040365219116
+    }
+  },
+  {
+    "text": "I would like to book a hotel close to our restaurant here in the centre  it will also need to be cheap  and have free parking",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9072428941726685
+    }
+  },
+  {
+    "text": "Yes  I am looking for the curry garden",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9774656295776367
+    }
+  },
+  {
+    "text": "Can you get me the phone number for old schools please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.5494763255119324
+    }
+  },
+  {
+    "text": "We are looking for indian food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.74567049741745
+    }
+  },
+  {
+    "text": "I would like a polynesian restaurant  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9118493795394897
+    }
+  },
+  {
+    "text": "Are there any turkish restaurants?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6709964871406555
+    }
+  },
+  {
+    "text": "6 people please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9000828862190247
+    }
+  },
+  {
+    "text": "Okay  book it for 4 nights starting saturday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9912091493606567
+    }
+  },
+  {
+    "text": "Sure  How about 15:15 on monday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.8658604025840759
+    }
+  },
+  {
+    "text": "I am also looking for a restaurant called the michaelhouse cafe",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999998807907104
+    }
+  },
+  {
+    "text": "yes  I need the room for one guest only  Thank you",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5662722587585449
+    }
+  },
+  {
+    "text": "Can you please get me a reservation at ali baba for tonight at 7PM?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999513626098633
+    }
+  },
+  {
+    "text": "Thank you  I am looking for a hotel in the west part of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9868214726448059
+    }
+  },
+  {
+    "text": "Is there a restaurant in the expensive price range that serves british food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8721007704734802
+    }
+  },
+  {
+    "text": "I'm looking for a italian place in the moderate price range  Can you suggest one and make reservations please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8072531223297119
+    }
+  },
+  {
+    "text": "What is the phone number of the el shaddai?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.956843912601471
+    }
+  },
+  {
+    "text": "Is there any corsica restaurants in the centre of town? Moderate price range",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.5470364093780518
+    }
+  },
+  {
+    "text": "I prefer creative food  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9018590450286865
+    }
+  },
+  {
+    "text": "I need a train that leaves after 18:15",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9756611585617065
+    }
+  },
+  {
+    "text": "And a train for Friday? I need to leave cambridge and arrive in ely by 21:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8972518444061279
+    }
+  },
+  {
+    "text": "What options are there for moderately priced restaurants at the centre?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.989197850227356
+    }
+  },
+  {
+    "text": "I would like to book a chinese restaurant is that clear?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9845316410064697
+    }
+  },
+  {
+    "text": "a place to stay  moderate price range should have internet and 3 stars",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.8800354599952698
+    }
+  },
+  {
+    "text": "Okay please book it for 1 people and 2 nights starting from saturday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9986218810081482
+    }
+  },
+  {
+    "text": "I am looking for a restaurant in the moderate price range and the food type for those restaurants",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9840233325958252
+    }
+  },
+  {
+    "text": "indian  And can you find me something to do afterwards in the same area of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7813150882720947
+    }
+  },
+  {
+    "text": "Do you happen to know if there is a nightclub in the centre?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9482703804969788
+    }
+  },
+  {
+    "text": "How about 1 night? Could you also please provide me with the reference number? I would also like to book a taxi",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.45051491260528564
+    }
+  },
+  {
+    "text": "I need a 4 star hotel",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.8975878953933716
+    }
+  },
+  {
+    "text": "I need a train from leicester to Cambridge on sunday arriving by 20:00",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.7837925553321838
+    }
+  },
+  {
+    "text": "I actually need to book 7 seats  Can you add 5 more?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9997520446777344
+    }
+  },
+  {
+    "text": "I am looking for a guesthouse with free parking  preferably one star",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.8786597847938538
+    }
+  },
+  {
+    "text": "Sure  can you check on a tuesday arrival?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.7100930213928223
+    }
+  },
+  {
+    "text": "I'm looking for the alexander bed and breakfast  Do you know it?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9888550639152527
+    }
+  },
+  {
+    "text": "Yes  I'm looking for a moderately priced restaurant with British food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9879392981529236
+    }
+  },
+  {
+    "text": "Yes please  can you book a table for 1 on monday at 13:00?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9998008012771606
+    }
+  },
+  {
+    "text": "Can I get the address for saffron brasserie?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.3119119703769684
+    }
+  },
+  {
+    "text": "Yes  I would like to visit a park  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9256417751312256
+    }
+  },
+  {
+    "text": "Lets see what is available cheap  same area as the restaurant makes most sense but i am open to any area",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6891571879386902
+    }
+  },
+  {
+    "text": "Absolutely! Thank you! I also need information on the attractions that have multiple sports in town  in the same area as the restaurant please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9984643459320068
+    }
+  },
+  {
+    "text": "I'm sorry  I'd like a taxi from wandlebury country park to taj tandoori  I'd like the taxi to pick me up at 10:15",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9988035559654236
+    }
+  },
+  {
+    "text": "3 days and get me phone number  postcode  and address please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.5128610730171204
+    }
+  },
+  {
+    "text": "There are seven of us  we'd like a bit of an early dinner at 15:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9926980137825012
+    }
+  },
+  {
+    "text": "I am looking for the hotel cityroomz to be exact",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.4783572852611542
+    }
+  },
+  {
+    "text": "Yes  could you provide me with information on museums in the west of town and the entrance fees?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.46868860721588135
+    }
+  },
+  {
+    "text": "Parking is not important  Could you recommend one for me?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5586429238319397
+    }
+  },
+  {
+    "text": "no  i am also looking for a train  The train should arrive by 08:00 and should go to cambridge  The train should depart from london liverpool street and should leave on saturday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9937513470649719
+    }
+  },
+  {
+    "text": "I'm sorry  did I say Friday? I meant I want a booking for 5 nights starting on thursday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8866904973983765
+    }
+  },
+  {
+    "text": "Then I can I get one on saturday for 5 nights?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9274118542671204
+    }
+  },
+  {
+    "text": "Just myself  but I need the room for 5 nights starting on Monday  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8935362100601196
+    }
+  },
+  {
+    "text": "can you book it for sunday afternoon?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.40679046511650085
+    }
+  },
+  {
+    "text": "Actually  I'd like a moderately priced international restaurant in the centre  I need the postcode and address please  Sorry  I keep changing my request!",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.47353798151016235
+    }
+  },
+  {
+    "text": "yes  that would work for me  Please book it for 2 people for 2 nights starting sunday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9997326135635376
+    }
+  },
+  {
+    "text": "What kind of expensive restaurants are in the center of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9979244470596313
+    }
+  },
+  {
+    "text": "In Cambridge I need a cheap guesthouse please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9879310727119446
+    }
+  },
+  {
+    "text": "Actually  I'd like to go to a multiple sports attraction in the west if there is one?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9925859570503235
+    }
+  },
+  {
+    "text": "I actually need the reservation for 7 people please  at 14:15 on tuesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9968803524971008
+    }
+  },
+  {
+    "text": "That's fine  I don't want to book yet  Is the train you found going to ely and leaving on wednesday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8331668376922607
+    }
+  },
+  {
+    "text": "I would prefer a restaurant that serves creative food in the centre of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.5446583032608032
+    }
+  },
+  {
+    "text": "I am looking for a guesthouse with free wifi and parking  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9096927642822266
+    }
+  },
+  {
+    "text": "I'd like to stay on friday  4 nights  3 people  I also need a reference number",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.989228367805481
+    }
+  },
+  {
+    "text": "Are there any expensive hotels in the north? I plan on staying with 4 other people for 4 nights  starting wednesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9808776378631592
+    }
+  },
+  {
+    "text": "I am interested in a restaurant that is in the expensive price range",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7259413003921509
+    }
+  },
+  {
+    "text": "Can you book me a room for 1 night instead?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8759704232215881
+    }
+  },
+  {
+    "text": "I am looking to travel on monday  The first train at 17:01 would be fine  Can I get that train info?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9261689186096191
+    }
+  },
+  {
+    "text": "I need a college in the centre of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.928168535232544
+    }
+  },
+  {
+    "text": "Book it starting from friday and it will be for 4 people and I'll also need the reference number  We also need to find a place to eat",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8567065000534058
+    }
+  },
+  {
+    "text": "Yes  I'd like a moderate price range  and a restaurant on the south side",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9996867775917053
+    }
+  },
+  {
+    "text": "I need a train to cambridge on tuesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9988294839859009
+    }
+  },
+  {
+    "text": "A park or swimming on the east side",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.848304271697998
+    }
+  },
+  {
+    "text": "I'd like to find a cheap 4 star place in the cheap price range please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.5074799060821533
+    }
+  },
+  {
+    "text": "Yes  are there any weish restaurants in the cheap price range that are in north Cambridge?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9951359629631042
+    }
+  },
+  {
+    "text": "I apologize  I would like a table for 4 at 16:45 on wednesday  Please tell me my reference number  if you don't mind",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9683012366294861
+    }
+  },
+  {
+    "text": "It is trinity college  Can you tell me a little about it?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.8895984292030334
+    }
+  },
+  {
+    "text": "I'm looking specifically for a guesthouse  and one that has free parking  I'm renting a car to sightsee",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9723238348960876
+    }
+  },
+  {
+    "text": "I'll take the expensive one  What's the name and can I get their phone number please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.751517653465271
+    }
+  },
+  {
+    "text": "I need to book a Taxi  I'll be leaving Express by Holiday Inn Cambridge by 1:00  and going to the cafe jello gallery  I'll need the contact number and car type",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9982554316520691
+    }
+  },
+  {
+    "text": "I want the taxi at 7:15 p m  leaving the yippee noodle bar",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.7623012065887451
+    }
+  },
+  {
+    "text": "17:45 for a table of 7 for the restaurant stated above  Thank you!",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9301741719245911
+    }
+  },
+  {
+    "text": "I need a train that will arrive in cambridge by 21:45",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9623562097549438
+    }
+  },
+  {
+    "text": "The restaurant is called eraina",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9345768690109253
+    }
+  },
+  {
+    "text": "I need the table booked for monday at 12:15 for 3 people  Thanks  Also could i get the ref #?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9936496019363403
+    }
+  },
+  {
+    "text": "Yes  can you find a chinese food restaurant in that post code instead?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9292953014373779
+    }
+  },
+  {
+    "text": "Are there any italian places in town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8994265794754028
+    }
+  },
+  {
+    "text": "I will also need a taxi to get to the hotel by 21:15",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.999771237373352
+    }
+  },
+  {
+    "text": "I would like to visit an entertainment attraction",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.8937900066375732
+    }
+  },
+  {
+    "text": "Yes  I'm looking for something to do in the centre of town that is architecture oriented",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9965423345565796
+    }
+  },
+  {
+    "text": "I would like the post code for the old school",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.6374810934066772
+    }
+  },
+  {
+    "text": "What is there to see in the centre and what is the postcode?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.4924759566783905
+    }
+  },
+  {
+    "text": "Not really  Could you give me the postcode for one of the museums?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9806306958198547
+    }
+  },
+  {
+    "text": "Can I get the departure time and price of my train reservation? Also  could you try to book my table for 20:00?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.7640157341957092
+    }
+  },
+  {
+    "text": "What area is the belfry in? Do they have internet? I'd also like their phone number",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9985257387161255
+    }
+  },
+  {
+    "text": "Is there anywhere that serves middle eastern food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.5442405343055725
+    }
+  },
+  {
+    "text": "Can you tell me more about the acorn guest house before we look at booking  I'm looking for a moderately priced room and some other amenities",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9302105903625488
+    }
+  },
+  {
+    "text": "I'm looking in particular for the mahal of cambridge",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.6203177571296692
+    }
+  },
+  {
+    "text": "I am going to cambridge from leicester  And  yes  please book it for me",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.6522823572158813
+    }
+  },
+  {
+    "text": "I'm sorry  I said I needed a seat for me  but I actually need 7 seats total  My friends would not be happy if I stranded them",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.993433952331543
+    }
+  },
+  {
+    "text": "I'm coming to cambridge from london kings cross",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.5675999522209167
+    }
+  },
+  {
+    "text": "I'm looking for a restaurant serves traditional food  Are there any nearby?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999387860298157
+    }
+  },
+  {
+    "text": "Hello  I'm excited to visit Cambridge  Can you give me addresses and phone numbers of different types of attractions in the centre of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9547531604766846
+    }
+  },
+  {
+    "text": "I like a train going to cambridge on tuesday please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9983230829238892
+    }
+  },
+  {
+    "text": "No  book the 11:35 train  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.8966040015220642
+    }
+  },
+  {
+    "text": "I'm looking for a restaurant that serves chinese food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9998881220817566
+    }
+  },
+  {
+    "text": "A college please  I'll need the entrance fee  postcode  and phone number for the one you suggest",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8299949169158936
+    }
+  },
+  {
+    "text": "It is called nusha  Can you tell me a little bit about it?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.7575032114982605
+    }
+  },
+  {
+    "text": "Okay go ahead and book the one for 19:35  I also need a hotel on the cheap side",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.23326481878757477
+    }
+  },
+  {
+    "text": "I'd like an expensive restaurant please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7042653560638428
+    }
+  },
+  {
+    "text": "Yes  I would like an expensive restaurant that serves indian food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7897234559059143
+    }
+  },
+  {
+    "text": "I'd like sunday at 18:15  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.8577193021774292
+    }
+  },
+  {
+    "text": "Thank you can I have the address as well? Additionally  are there any museums in the immediate area to visit before hand?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9922760725021362
+    }
+  },
+  {
+    "text": "What area is the lynne strover museum in?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.717195987701416
+    }
+  },
+  {
+    "text": "I want so african food that is cheap",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9664990305900574
+    }
+  },
+  {
+    "text": "I am looking for entertainment in the centre of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9819305539131165
+    }
+  },
+  {
+    "text": "I would like a restaurant in the centre",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7508490681648254
+    }
+  },
+  {
+    "text": "I also need a train from birmingham new street on monday that goes to cambrige by 20:30",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9941614270210266
+    }
+  },
+  {
+    "text": "Sure  I'll take the one that leaves at 5:29  what is the cost?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.6269699335098267
+    }
+  },
+  {
+    "text": "Please book the reservation for thursday at 3:00pm and please provide me with a reference number",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.7302505373954773
+    }
+  },
+  {
+    "text": "I would like a restaurant in the centre  preferably a steakhouse in the cheap price range",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9753289222717285
+    }
+  },
+  {
+    "text": "I'll be staying for 3 nights starting on tuesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9544979929924011
+    }
+  },
+  {
+    "text": "curry prince sounds terrific  I'll try that out  Thank you for the information! Goodbye!",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9931498169898987
+    }
+  },
+  {
+    "text": "What is the postcode for the old school?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8788067698478699
+    }
+  },
+  {
+    "text": "I'd like to visit a college in the south",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9875654578208923
+    }
+  },
+  {
+    "text": "Yes  can you look for a theatre in the south?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9335314631462097
+    }
+  },
+  {
+    "text": "Can i have the address for cambridge punter?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9879175424575806
+    }
+  },
+  {
+    "text": "That sounds good  can you book it for 8 people on tuesday at 21:00?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9991406798362732
+    }
+  },
+  {
+    "text": "That train would work well  but I really need 2 tickets and the reference number please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9987752437591553
+    }
+  },
+  {
+    "text": "Thanks for the booking  I would also like to see more of the west of Cambridge  particularly some type of an attraction",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.98381108045578
+    }
+  },
+  {
+    "text": "I would like a restaurant that serves british food",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7982065081596375
+    }
+  },
+  {
+    "text": "Yes  I am looking for a restaurant that offers vegetarian options",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9986838698387146
+    }
+  },
+  {
+    "text": "For 4 people at 15:15 on either monday or Saturday please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9887187480926514
+    }
+  },
+  {
+    "text": "iM LOOKING FOR THE peking restaurant WHAT TYPE OF food DOES IT SERVE AND I ALSO NEED THE address",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9248988628387451
+    }
+  },
+  {
+    "text": "Sure  Check only for hotels which include free parking also",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.7827647924423218
+    }
+  },
+  {
+    "text": "I want to stay at a 3 star hotel with free parking",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.6389776468276978
+    }
+  },
+  {
+    "text": "Ok  could you book it for 8 people starting wednesday for 2 nights please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9987182021141052
+    }
+  },
+  {
+    "text": "I'll be staying 2 nights starting on wednesday  Oh  and there are 6 of us",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9750232100486755
+    }
+  },
+  {
+    "text": "I'd like to visit something in the west part of town",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.7643766403198242
+    }
+  },
+  {
+    "text": "1 person please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.3249704837799072
+    }
+  },
+  {
+    "text": "Are there any african restaurants outside of the city center?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9981781244277954
+    }
+  },
+  {
+    "text": "moderate  Please give me a phone number  address  and postcode for the restaurant you find  Thanks!",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.920443594455719
+    }
+  },
+  {
+    "text": "Can you find me a guesthouse that is expensive?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9503392577171326
+    }
+  },
+  {
+    "text": "I'd like for it to be expensive  Any you choose is fine  I'll need the postcode  also  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.877791166305542
+    }
+  },
+  {
+    "text": "Yes  I would like a theatre in the centre",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.6905537247657776
+    }
+  },
+  {
+    "text": "The one for 7:35 is fine  Can I get the ID # and price  too?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9976176023483276
+    }
+  },
+  {
+    "text": "I need a train that departs cambridge to stevenage on Friday leaving after 18:30",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8998967409133911
+    }
+  },
+  {
+    "text": "You don't have a cheap guesthouse (any area) with free wifi  for tuesday  4 nights  3 people? Could you please check again?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9848887920379639
+    }
+  },
+  {
+    "text": "I need to find a hotel with a 3 star rating that includes free wifi",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9905096292495728
+    }
+  },
+  {
+    "text": "Thanks for your help with the hotel  How about a restaurant in the centre that serves indian food?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9925683736801147
+    }
+  },
+  {
+    "text": "Yes  a taxi would be great  And I want to depart from williams art and antiques",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9999422430992126
+    }
+  },
+  {
+    "text": "hotel would be better  can I get a phone number for one please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9370485544204712
+    }
+  },
+  {
+    "text": "I'll be arriving Saturday and staying 3 nights  There are 3 of us",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8488242626190186
+    }
+  },
+  {
+    "text": "I would like an expensive restaurant",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6161354780197144
+    }
+  },
+  {
+    "text": "Yes it needs to be in the centre  Can you book me a table for 6 people at 17:45 on Friday?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9497115015983582
+    }
+  },
+  {
+    "text": "Can I get info for the 09:50 the price and the trains ID please?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9924289584159851
+    }
+  },
+  {
+    "text": "I am looking for a museum",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9581252336502075
+    }
+  },
+  {
+    "text": "I would like a restaurant in the cheap price range  Can you find one?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9822301268577576
+    }
+  },
+  {
+    "text": "Sorry  Actually I need an expensive restaurant in the north  the first on your list would be great",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9033672213554382
+    }
+  },
+  {
+    "text": "Moderately priced northern european cuisine  please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9527754187583923
+    }
+  },
+  {
+    "text": "Are there any japanese restaurants in the centre of town?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7623026967048645
+    }
+  },
+  {
+    "text": "I need a train that departs after 08:30 on friday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9182206392288208
+    }
+  },
+  {
+    "text": "I will take a reservation at the riverside brasserie for 1 person at 14:30 on Wednesday",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9212892651557922
+    }
+  },
+  {
+    "text": "I just need the address for one of them  I guess the one in the east will do",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.4278983771800995
+    }
+  },
+  {
+    "text": "Are there any churches or museums on the east side?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.6292566061019897
+    }
+  },
+  {
+    "text": "I'd like to make a reservation for saturday at 11:45  And there has been a change in plans  I will be dining alone",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9997109770774841
+    }
+  },
+  {
+    "text": "I am not particular  how about moderate? I will need their phone number  address and postcode please",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8873198628425598
+    }
+  },
+  {
+    "text": "Yes  please book a reservation for 7 people",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.7785491347312927
+    }
+  },
+  {
+    "text": "Can you get a table for 7 at 9:00?",
+    "intent": "inform",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.6132097244262695
+    }
+  },
+  {
+    "text": "I am interested in the one in the north  Could I have their postcode and address?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9967030882835388
+    }
+  },
+  {
+    "text": "I need one  Departure time  travel time and train id? Also  I need a college in the west  I need the phone number and postcode to it",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.484592080116272
+    }
+  },
+  {
+    "text": "I would like to book 4  Can you tell me the price for each ticket before I book them?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9992895722389221
+    }
+  },
+  {
+    "text": "tuesday  get me the reference number please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9526071548461914
+    }
+  },
+  {
+    "text": "yes  could you provide the postcode and star of the hotel",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9771572947502136
+    }
+  },
+  {
+    "text": "Yes for Saturday I also want to know the nearby attraction called all saints church   address and area please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9985102415084839
+    }
+  },
+  {
+    "text": "May I also get the address for wandlebury country park please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8905511498451233
+    }
+  },
+  {
+    "text": "It doesn't matter what kind of food  What would you recommend for a large group of 8 people?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.6617427468299866
+    }
+  },
+  {
+    "text": "I do not have an area preference  can you recommend a museum?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.963891863822937
+    }
+  },
+  {
+    "text": "I'd just like the address for now  thanks  Are there any attractions in the west part of town?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.3604729175567627
+    }
+  },
+  {
+    "text": "Could you tell me what the postcode is for the camboats?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7028465867042542
+    }
+  },
+  {
+    "text": "Yes  I would like it the same day at 14:00  I would also like the reference number from the train and restaurant please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.6124858260154724
+    }
+  },
+  {
+    "text": "A moderate priced one is fine  Please give me the postcode phone number and area",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5623541474342346
+    }
+  },
+  {
+    "text": "The museum I want should be in the west side of town and can I have the postcode for the museum",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5056560635566711
+    }
+  },
+  {
+    "text": "And the attraction type is a museum  right?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6191695928573608
+    }
+  },
+  {
+    "text": "postcode please  than search for an indian restaurant if you are able to",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4719945192337036
+    }
+  },
+  {
+    "text": "I'm not familiar with the different areas  so I guess it doesn't matter  I would like a moderate though  With free WiFi",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9707507491111755
+    }
+  },
+  {
+    "text": "Expensive would be fine  Can I have the address for the most expensive Indian restaurant out of the four?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.45040127635002136
+    }
+  },
+  {
+    "text": "I don't really have a price range  Anything is fine  I would like it to have free parking and wifi  though  And of course  4 stars like I mentioned",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999162554740906
+    }
+  },
+  {
+    "text": "Yes please  book that for 6 people and I need the reference number",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9974321126937866
+    }
+  },
+  {
+    "text": "I'd just like to book a taxi between the two  I'd like to get to the restaurant by my reservation time and I'll need the contact number and car type please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9380166530609131
+    }
+  },
+  {
+    "text": "I am most interested in a museum  Can you send me postcode and address  I also would like a cheap catalan restaurant  please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9698288440704346
+    }
+  },
+  {
+    "text": "Yes  the expensive price range please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9961302280426025
+    }
+  },
+  {
+    "text": "Yes  Please book a table for 8 people at 21:00 on the same day  If 21:00 isn't available  please do 20:00  I will need a reference number too",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.991140604019165
+    }
+  },
+  {
+    "text": "I will also need the address as well for the two parks please  Thank you!",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9469080567359924
+    }
+  },
+  {
+    "text": "I'd like expensive european food  Pick one and give me a phone number please",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6280667185783386
+    }
+  },
+  {
+    "text": "Never mind  I'm all set  I even have the reference number for my reservation  Thanks for your help - goodbye!",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7474381923675537
+    }
+  },
+  {
+    "text": "I don't care about the type as long as it is in the east and has free parking",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9955624938011169
+    }
+  },
+  {
+    "text": "i need the address and post code for anatolia",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9993901252746582
+    }
+  },
+  {
+    "text": "I trust your recommendation on a museum  What area is it in?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6625623106956482
+    }
+  },
+  {
+    "text": "Does it have a 4 star rating and internet?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9996328353881836
+    }
+  },
+  {
+    "text": "Can you let me know the postcode  if they have free parking  and phone number for carolina bed and breakfast?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9895086884498596
+    }
+  },
+  {
+    "text": "Yes please  Any area would be fine so long as its a nice college to visit  Would you recommend the best one?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4661925733089447
+    }
+  },
+  {
+    "text": "Yes  please let me know the postcode and entrance fee of one in the centre area",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7227486371994019
+    }
+  },
+  {
+    "text": "I need to book seats for 4 people please  and can I get the reference number for that?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9998453259468079
+    }
+  },
+  {
+    "text": "Just 1 ticket and I need the train id and total fees",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9974731802940369
+    }
+  },
+  {
+    "text": "I don't care about the price  I absolutely do need free parking  though",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.938379168510437
+    }
+  },
+  {
+    "text": "Please book a guesthouse  Can i also get the star rating and the postcode?",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6385144591331482
+    }
+  },
+  {
+    "text": "Please book it for 1 person for 5 nights starting friday  Please provide me with the reference number  Thank you",
+    "intent": "request",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9994139075279236
+    }
+  },
+  {
+    "text": "Yes  one more thing  We need a taxi that will take us from Clare Hall to our guesthouse",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9941115975379944
+    }
+  },
+  {
+    "text": "What is the address for holy trinity church?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9175323247909546
+    }
+  },
+  {
+    "text": "I need to know where they are located and if they have an entrance fee please",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9996642470359802
+    }
+  },
+  {
+    "text": "I need the phone number for a museum as well  Any one will do",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.43775004148483276
+    }
+  },
+  {
+    "text": "No that information is enough for now but I would like to find a college to visit on the west side and would appreciate their telephone and postcode",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4059264659881592
+    }
+  },
+  {
+    "text": "Nope that would be it",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8759701251983643
+    }
+  },
+  {
+    "text": "Thanks for your help with the train and attraction  Those were my concerns  Goodbye",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8368605375289917
+    }
+  },
+  {
+    "text": "And that is a 2 star hotel  correct? Are there any attractions I could visit in the centre?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6762270331382751
+    }
+  },
+  {
+    "text": "I am staying in the centre of town for the weekend  what is there to do there?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9937096238136292
+    }
+  },
+  {
+    "text": "that is it for today",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9990687370300293
+    }
+  },
+  {
+    "text": "That's all I needed  thank you",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999022483825684
+    }
+  },
+  {
+    "text": "Hmmm  I was looking for the phone number and postcode of a college in the centre area  Could you help me with that?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.478891521692276
+    }
+  },
+  {
+    "text": "That sounds nice  What is the postcode for that location  and is there a fee?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9986079931259155
+    }
+  },
+  {
+    "text": "Yes  What attraction is good in the north? May I have the address?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7756851315498352
+    }
+  },
+  {
+    "text": "I need the phone number and address of saint catherine's college and a taxi to commute both distance  Need to know the car type and also have the taxi number",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.3394811153411865
+    }
+  },
+  {
+    "text": "No  but I'd like to know the address and phone number for wandlebury country park",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8843235969543457
+    }
+  },
+  {
+    "text": "Yes I need a taxi between cinema and restaurant  What do you recommend?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9987214803695679
+    }
+  },
+  {
+    "text": "The \"Place\" sounds good  can I get its postcode  please?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9956308603286743
+    }
+  },
+  {
+    "text": "Nevermind  I actually don't need one",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.2969212830066681
+    }
+  },
+  {
+    "text": "It depends on what theatre you recommend",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5430153608322144
+    }
+  },
+  {
+    "text": "I am looking for a place called the man on the moon  can you give me their phone number and postcode please",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6321881413459778
+    }
+  },
+  {
+    "text": "Oh  yeah  I do want information on attractions! In the same area  After that  I will need a taxi",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.8718881607055664
+    }
+  },
+  {
+    "text": "I'm just looking for great saint mary's church",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8595635890960693
+    }
+  },
+  {
+    "text": "Thanks  can I have the address and postcode for the college you find",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8347921967506409
+    }
+  },
+  {
+    "text": "I still need the address for Churchill College  please",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9952777028083801
+    }
+  },
+  {
+    "text": "Moderate to cheap",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9921002388000488
+    }
+  },
+  {
+    "text": "Yes can you please assist with entertainment?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9707496762275696
+    }
+  },
+  {
+    "text": "Cool! Is that one of the free ones? Gotta save my money for the grub  you know",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.4267166256904602
+    }
+  },
+  {
+    "text": "I'm looking to get a taxi to atke me between the museum and the restaurant",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9999354481697083
+    }
+  },
+  {
+    "text": "Could you just confirm the entrance fee  attraction type  and postcode for Saint Catharine's?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9971151947975159
+    }
+  },
+  {
+    "text": "Yes I would like to go the fitzwilliam museum  Can you give me the address?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9644274711608887
+    }
+  },
+  {
+    "text": "Never mind  I don't want a restaurant  I want to go to a mulitple sports centre in the centre of town",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8834238052368164
+    }
+  },
+  {
+    "text": "whale of a time sounds great  Can you tell me what area of town they are in? And the postcode please?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9432228207588196
+    }
+  },
+  {
+    "text": "Hi  I'm looking for some places to go in Cambridge",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9087147116661072
+    }
+  },
+  {
+    "text": "Can I have the phone number for All Saints Church please?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9969111680984497
+    }
+  },
+  {
+    "text": "Cherry Hinton Hall sounds good can I get the phone number  address  and postcode",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9944424629211426
+    }
+  },
+  {
+    "text": "What is the address and post code of the departing station?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9980050921440125
+    }
+  },
+  {
+    "text": "Yes I need information on whipple museum of the history of science",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9122874140739441
+    }
+  },
+  {
+    "text": "Yes that is fine can you please provide the postcode?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.998958945274353
+    }
+  },
+  {
+    "text": "Thanks great  Also I need to have the phone number for All Saints Church on Jesus Lane",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9992126226425171
+    }
+  },
+  {
+    "text": "Is there an entrance fee for Downing College?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9976969361305237
+    }
+  },
+  {
+    "text": "Any of them would do  what would you recommend?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.32340702414512634
+    }
+  },
+  {
+    "text": "Okay I need to go now  Bye!",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.999843418598175
+    }
+  },
+  {
+    "text": "What is the entrance fee?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9974570274353027
+    }
+  },
+  {
+    "text": "Does the museum have an entrance fee?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9099970459938049
+    }
+  },
+  {
+    "text": "Can you book for arrival closer to 17:30 for one person and give me the reference number  Also I would like to see a college in centre",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7561547756195068
+    }
+  },
+  {
+    "text": "How about a park?",
+    "intent": "find_attraction",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9953088760375977
+    }
+  },
+  {
+    "text": "thanks and i look forward to my stay",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9531817436218262
+    }
+  },
+  {
+    "text": "Do they have rooms available for the same day as dinner?",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.6852185130119324
+    }
+  },
+  {
+    "text": "Thanks  I would also like the reference number  please",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9867315292358398
+    }
+  },
+  {
+    "text": "Free is the best price  thank you  that is all I need",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9938786625862122
+    }
+  },
+  {
+    "text": "Yes can you please?",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9287054538726807
+    }
+  },
+  {
+    "text": "OK  Thanks for your help  I look forward to the stay",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.7946903705596924
+    }
+  },
+  {
+    "text": "No  that seems like everything  Go ahead and book it  and we should be done here",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.748214602470398
+    }
+  },
+  {
+    "text": "I am in a hurry  this is odd  Hello? Can anyone help me? Can I speak with your supervisor?",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.6813092827796936
+    }
+  },
+  {
+    "text": "What time will it arrive?",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.3778822124004364
+    }
+  },
+  {
+    "text": "I do not need a reservation for the restaurnt just information",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.8530501127243042
+    }
+  },
+  {
+    "text": "Hmmm  could you try again  That is what I really need",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.43101465702056885
+    }
+  },
+  {
+    "text": "Guess thats what they mean when they say \"better late than never\" ha ha ha  Thank you  I hate it when systems crash  I am all set",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.7778072357177734
+    }
+  },
+  {
+    "text": "Fantastic I can't wait to eat there  All set",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9993892312049866
+    }
+  },
+  {
+    "text": "I don't need the phone number  Thank you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9983428716659546
+    }
+  },
+  {
+    "text": "9:50 departure  4 40 pounds  TR1923  I got it  thank you!",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.659544825553894
+    }
+  },
+  {
+    "text": "No  but I would like the price  arrival time  and travel time  please",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9975587725639343
+    }
+  },
+  {
+    "text": "No  Thank you for all your help  Goodbye",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.99998939037323
+    }
+  },
+  {
+    "text": "Are there any italian restaurants in the city centre?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6979910135269165
+    }
+  },
+  {
+    "text": "I would actually like to book 5 people and would like to know the reference number for the tickets and the address of la tasca restaurant",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.7780507802963257
+    }
+  },
+  {
+    "text": "Yes their postcode and whether they have free parking or not",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9976058602333069
+    }
+  },
+  {
+    "text": "I need the taxi to pick me up at the theatre  But I suppose we should figure out exactly which theatre that is  You mentioned one in the centre?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9925047755241394
+    }
+  },
+  {
+    "text": "That cuts it a little close but it will do  I don't need it booked  though  Can you also find me a place to get some food?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.5542313456535339
+    }
+  },
+  {
+    "text": "I would like to try saigon city",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9999935030937195
+    }
+  },
+  {
+    "text": "I would want something in the centre of town",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9935572743415833
+    }
+  },
+  {
+    "text": "Are there any chinese food restaurants in the south?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8696437478065491
+    }
+  },
+  {
+    "text": "I would really love to have some chinese food while I am in town",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9566717743873596
+    }
+  },
+  {
+    "text": "I'm looking for a place  I think it's called like bridge House or bridge guesthouse or something",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.8926534652709961
+    }
+  },
+  {
+    "text": "Wonderful! Thank you for your help",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9998296499252319
+    }
+  },
+  {
+    "text": "How about the center?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.4362918734550476
+    }
+  },
+  {
+    "text": "moderate price in the east  and I need the phone number  address  and food type",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9603298306465149
+    }
+  },
+  {
+    "text": "Are there any african restaurants in the centre?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6568360924720764
+    }
+  },
+  {
+    "text": "I want indian food in the center area",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9209513664245605
+    }
+  },
+  {
+    "text": "What is the address for pizza hut in cherry hinton?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8445079922676086
+    }
+  },
+  {
+    "text": "restaurant is what i am looking for  entrance fee and postcode please  get me a taxi from the attraction by 10 15  get me its contact number and car type",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.4449075162410736
+    }
+  },
+  {
+    "text": "I would like an indian restaurant in the same price range as the hotel please",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6559890508651733
+    }
+  },
+  {
+    "text": "Nope  That should cover it",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.999750554561615
+    }
+  },
+  {
+    "text": "I apologize  I wasn't paying attention to what I wanted  Can you help me find a modern eclectic restaurant in the centre?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7970021367073059
+    }
+  },
+  {
+    "text": "the address please",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9979192018508911
+    }
+  },
+  {
+    "text": "Let's start with a moderately priced place to eat",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9926212430000305
+    }
+  },
+  {
+    "text": "I'd like some chinese food  please!",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9551714658737183
+    }
+  },
+  {
+    "text": "Are there any cheap indian restaurants available?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9890868663787842
+    }
+  },
+  {
+    "text": "Something classy nearby for dinner  preferably Italian or indian cuisine?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9988766312599182
+    }
+  },
+  {
+    "text": "Yes  actually  What is the postcode of Caffee Uno?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9954041242599487
+    }
+  },
+  {
+    "text": "I am looking for information in Cambridge",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.6281922459602356
+    }
+  },
+  {
+    "text": "The attraction type is entertainment  in the east area  please",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4252796471118927
+    }
+  },
+  {
+    "text": "I am looking for a restaurant called the lucky star and would like to book the same six people there on the same day  Is that a possibility?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.7453800439834595
+    }
+  },
+  {
+    "text": "Could really use some grub",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.3748892843723297
+    }
+  },
+  {
+    "text": "Alright  Thank you  That is all I'll need today",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.999982476234436
+    }
+  },
+  {
+    "text": "May I have a second recommendation with their phone number and postcode?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9991357326507568
+    }
+  },
+  {
+    "text": "Are there any british restaurants in the centre?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7450613975524902
+    }
+  },
+  {
+    "text": "Your train leaves Cambridge at 15:29 and arrives at 16:07 at Bishops Stortford  I will also look for you a japanese restaurant in centre and expensive",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.3534676730632782
+    }
+  },
+  {
+    "text": "I would also like to book a table at the restaurant Ask for 8 people on Tuesday at 18:00",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9725669026374817
+    }
+  },
+  {
+    "text": "I want chinese food in cheap price range in west side of town  A 3 star hotel that is expensive and includes wifi  Also the hotel address  area  and postcode please",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5675824880599976
+    }
+  },
+  {
+    "text": "I am coming to cambridge to try some good food  but would like to find a place to go in the centre area",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.570375919342041
+    }
+  },
+  {
+    "text": "I'm staying in the west and I want to find a place near here that serves real british food",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.41740912199020386
+    }
+  },
+  {
+    "text": "What restaurants in the centre serve international cuisine?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9779419898986816
+    }
+  },
+  {
+    "text": "It's my wife's birthday and I promised I'd take her out  Are there any restaurants that serve mediterranean food?",
+    "intent": "find_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9982374906539917
+    }
+  },
+  {
+    "text": "I would like chinese  I would like that for 7pm",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.998879611492157
+    }
+  },
+  {
+    "text": "I need the reservation for saturday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6113648414611816
+    }
+  },
+  {
+    "text": "It will just be for me on wednesday  I would like it to be for around 4pm",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.6538724303245544
+    }
+  },
+  {
+    "text": "That is all I need  Thanks  and have a nice day",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999639391899109
+    }
+  },
+  {
+    "text": "Book this for 6 people on monday at 12:30  Reference number? Also  I need a train leaving from Cambridge going to London Liverpool Street  arriving by 12:00",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9240197539329529
+    }
+  },
+  {
+    "text": "How about an expensive british place? I'd like a reservation for wednesday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7477312684059143
+    }
+  },
+  {
+    "text": "That would be great  I need it for 8 on friday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9228480458259583
+    }
+  },
+  {
+    "text": "Can I have the reference number for the reservation please?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9778698086738586
+    }
+  },
+  {
+    "text": "I need it for 8 people",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.50295090675354
+    }
+  },
+  {
+    "text": "Yes  I still need to book a reservation for 8 people at Zizzi Cambridge",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.5536675453186035
+    }
+  },
+  {
+    "text": "I would like pizza please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.506132185459137
+    }
+  },
+  {
+    "text": "I'll be dining saturday at 7 pm  there are 3 in my party  Also  I need to know if there are any trains leaving sunday going to peterborough",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9187108278274536
+    }
+  },
+  {
+    "text": "Great! I also need an expensive restaurant in the west that serves persian for the same day and party as well please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9998152256011963
+    }
+  },
+  {
+    "text": "Can you try the Lovell Lodge for the Wednesday  please?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8470286726951599
+    }
+  },
+  {
+    "text": "any price range please  need it for monday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.4528849422931671
+    }
+  },
+  {
+    "text": "It doesn't matter to me which type of food they serve  What would you recommend for a person eating alone?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9997069835662842
+    }
+  },
+  {
+    "text": "Yes  I will make a reservation at nandos in the south part of the city for five people on thursday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5252290368080139
+    }
+  },
+  {
+    "text": "What kind of food is it?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9996427893638611
+    }
+  },
+  {
+    "text": "The restaurant is for six as well",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9127793908119202
+    }
+  },
+  {
+    "text": "Any of them you recommend would be fine  I do need a booking for saturday",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9797866940498352
+    }
+  },
+  {
+    "text": "Will do",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9783270955085754
+    }
+  },
+  {
+    "text": "Thanks I also need a taxi arriving in time for the reservation at the restaurant",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9987670183181763
+    }
+  },
+  {
+    "text": "Please book golden curry for 2",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5255249738693237
+    }
+  },
+  {
+    "text": "Yes could I have my booking reference number please?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9737854599952698
+    }
+  },
+  {
+    "text": "Sure it'll be 13:30",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9052786231040955
+    }
+  },
+  {
+    "text": "Do you think they would be able to make reservations for a party of 7?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.3995632827281952
+    }
+  },
+  {
+    "text": "Oh  I made a mistake  I really need that table for 16:15  not 17:45  Can you change it  do you thing?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9995973706245422
+    }
+  },
+  {
+    "text": "Yes  the same day  Can I get the reference number  please?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8379297256469727
+    }
+  },
+  {
+    "text": "Yes  please book that for me",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9643626809120178
+    }
+  },
+  {
+    "text": "I would prefer european food  Is there one in the area? Please book a table for 2 at 15.15. I need the phone number and postcode please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5513129234313965
+    }
+  },
+  {
+    "text": "I am looking for a nice restaurant with price range high and book a table for 4",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9822571873664856
+    }
+  },
+  {
+    "text": "16:30 please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.816458523273468
+    }
+  },
+  {
+    "text": "I don't really mind  as long as it is near the restaurant  What looks good to you?",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.4977930188179016
+    }
+  },
+  {
+    "text": "I don't care about the about the area  I need a table for four",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9548537135124207
+    }
+  },
+  {
+    "text": "No preference  I just need something that will accommodate 4 people on sunday please",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.8374565243721008
+    }
+  },
+  {
+    "text": "I need to find a restaurant in the wast part of town",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.9999932646751404
+    }
+  },
+  {
+    "text": "I would like to book a table for 3  May I also have the phone number and postcode for the restaurant",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.6738465428352356
+    }
+  },
+  {
+    "text": "I also need a taxi from the Church so I can get to the restaurant on time",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_taxi",
+      "confidence": 0.9998189210891724
+    }
+  },
+  {
+    "text": "Yes  Please book it",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5609449744224548
+    }
+  },
+  {
+    "text": "I would like a reservation for 2 to the peking restaurant",
+    "intent": "book_restaurant",
+    "intent_prediction": {
+      "name": "find_restaurant",
+      "confidence": 0.7204606533050537
+    }
+  },
+  {
+    "text": "We'll be leaving at 22:30",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9795312285423279
+    }
+  },
+  {
+    "text": "Can you help me get to zizzi cambridge after 22:45?",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.5626124143600464
+    }
+  },
+  {
+    "text": "I will need a hotel between the two",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.6392002105712891
+    }
+  },
+  {
+    "text": "Can you also find me a train? I need it departing from bishops stortford",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9995511174201965
+    }
+  },
+  {
+    "text": "How about cambridge arts?",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "find_bus",
+      "confidence": 0.4670574963092804
+    }
+  },
+  {
+    "text": "What time would you like to depart?",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.7726577520370483
+    }
+  },
+  {
+    "text": "How many stars  also the postcode and address? I will also need a taxi and want it to arrive by 17:00  Contact number and car type",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.6051782369613647
+    }
+  },
+  {
+    "text": "Yes  I'm leaving aylesbray lodge and need to be at peking restaurant by 17:00  Please get me the contact number and car type",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9599134922027588
+    }
+  },
+  {
+    "text": "Yes  that would be great  I need to make it to the restaurant by 11:15",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9268268346786499
+    }
+  },
+  {
+    "text": "I'm sorry but I will be dining at the Eraina restaurant  Can you have the same taxi pick me up there instead?",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.4749085605144501
+    }
+  },
+  {
+    "text": "I'm traveling on saturday",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9967555403709412
+    }
+  },
+  {
+    "text": "I appreciate your help  Goodbye",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9998098611831665
+    }
+  },
+  {
+    "text": "Departing from finches bed and breakfast  and arriving at cambridge lodge restaurant",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9797363877296448
+    }
+  },
+  {
+    "text": "I need the taxi from the museum to the restaurant  arriving by my reservation at 13:45",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7253496646881104
+    }
+  },
+  {
+    "text": "I will be departing from the hotel and going to the restaurant  I need to be there in time for my reservation",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5356072783470154
+    }
+  },
+  {
+    "text": "yes i need to leave the hotel by 4:00",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9754593968391418
+    }
+  },
+  {
+    "text": "I need to be picked up from pizza hut city centre after 04:30",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9994188547134399
+    }
+  },
+  {
+    "text": "I actually just need the post code for the bridge guest house  and then i'll need a taxi as well",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8966224193572998
+    }
+  },
+  {
+    "text": "I need to leave the attraction by 24:00  And I need a contact number and car type please",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9860272407531738
+    }
+  },
+  {
+    "text": "Ok thank you",
+    "intent": "find_taxi",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9994397759437561
+    }
+  },
+  {
+    "text": "I actually don't need reservations I just need the phone number  price range",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9907286763191223
+    }
+  },
+  {
+    "text": "Before we do that  what is the name of the guesthouse? And also  do they have free parking?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9818463325500488
+    }
+  },
+  {
+    "text": "Pick one please  just please give me the travel time  arrival time  and price",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.936109721660614
+    }
+  },
+  {
+    "text": "I'd like a moderately priced hotel with free parking  please",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7958590984344482
+    }
+  },
+  {
+    "text": "yes please  I need an expensive guesthouse that has free parking please",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6727178692817688
+    }
+  },
+  {
+    "text": "Can you let me know about 4 star places in cambridge? I want a personal touch  so a guesthouse who be perfect",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6850100755691528
+    }
+  },
+  {
+    "text": "I don't want to book yet  I need to first make sure that I can stay at a hotel called \"Acorn Guest House\"",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5600292682647705
+    }
+  },
+  {
+    "text": "Yes  it would be for the same group of people  and we will be staying 4 nights",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9990196824073792
+    }
+  },
+  {
+    "text": "Are there any hotels with a star of 4 I can stay at?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4878425598144531
+    }
+  },
+  {
+    "text": "Okay  That is all I need ton know",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9991397857666016
+    }
+  },
+  {
+    "text": "yes  actually  I'd like to find a guesthouse with free wifi",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.992412805557251
+    }
+  },
+  {
+    "text": "No  I want an expensive hotel with free wi-fi",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8400399684906006
+    }
+  },
+  {
+    "text": "just find me the postcode and address",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9990976452827454
+    }
+  },
+  {
+    "text": "Where is the university arms hotel?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9944823384284973
+    }
+  },
+  {
+    "text": "Does it have internet?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9993154406547546
+    }
+  },
+  {
+    "text": "What is the area?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9975391626358032
+    }
+  },
+  {
+    "text": "Sure  How long is the travel time please?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.8969294428825378
+    }
+  },
+  {
+    "text": "No  that would all right  I'll do it myself",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9966205954551697
+    }
+  },
+  {
+    "text": "Absolutely! Thank you!",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9915709495544434
+    }
+  },
+  {
+    "text": "one in the east of town",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9998580813407898
+    }
+  },
+  {
+    "text": "Are there any 1-star hotels with free parking?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5398947596549988
+    }
+  },
+  {
+    "text": "Are there any guesthouses in the east?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9911445379257202
+    }
+  },
+  {
+    "text": "Sorry I have the restaurant  I am looking for a cheap  four star hotel with free parking and internet",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8609434366226196
+    }
+  },
+  {
+    "text": "how much will i need to pay for ticket?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9962708950042725
+    }
+  },
+  {
+    "text": "I would need a room for 5 nights  for 4 people please",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.9909753799438477
+    }
+  },
+  {
+    "text": "How about some place cheap  with 4 stars?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.999874472618103
+    }
+  },
+  {
+    "text": "Can you try entertainment in the same area please?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9873791337013245
+    }
+  },
+  {
+    "text": "There are hotels with free wifi and parking  right?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.6779612302780151
+    }
+  },
+  {
+    "text": "I am planning a trip in Cambridge",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.999680757522583
+    }
+  },
+  {
+    "text": "I would like a guesthouse with free wifi please",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9953893423080444
+    }
+  },
+  {
+    "text": "Actually  I don't think I'm ready to make a reservation just yet  Does the location on the north side of town have 4 stars  free parking  and moderate prices?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9984457492828369
+    }
+  },
+  {
+    "text": "I sure hope so  I'd like to find a place to stay  with four stars  in the north",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5021955370903015
+    }
+  },
+  {
+    "text": "I'd like to stay in an expensive three star place with free parking  Is there anything like that?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.564391553401947
+    }
+  },
+  {
+    "text": "What is the address to the ashley hotel?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9952474236488342
+    }
+  },
+  {
+    "text": "No need to book it for me  Are there any 3 star hotels in the moderate price range?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.758379340171814
+    }
+  },
+  {
+    "text": "i want a reservation that has cheap price and should be in the east",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9976440072059631
+    }
+  },
+  {
+    "text": "Not at this time  I am looking for a 3-star hotel  though  No guesthouses",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7173833847045898
+    }
+  },
+  {
+    "text": "I'd like a moderately priced place to stay  But only if it is a 0 star  I love a little adventure!",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9569116830825806
+    }
+  },
+  {
+    "text": "the center",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9875906109809875
+    }
+  },
+  {
+    "text": "Are there any guesthouses with 3 star ratings?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9919615983963013
+    }
+  },
+  {
+    "text": "I need a hotel that is in the expensive price range  That has a 3 star rating",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8471177220344543
+    }
+  },
+  {
+    "text": "Yes  I would like an expensive hotel in the center and what type of attraction is in the area in walking distance?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7193828225135803
+    }
+  },
+  {
+    "text": "I'm looking for a guesthouse that has free parking included  Should be moderately priced  and have four stars",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.48012253642082214
+    }
+  },
+  {
+    "text": "A hotel in the centre with free wifi  please",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9941461086273193
+    }
+  },
+  {
+    "text": "OK  thank you  I just need the price",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9968729019165039
+    }
+  },
+  {
+    "text": "Thank you  have a great day  too",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999088048934937
+    }
+  },
+  {
+    "text": "I don't have a specific one in mind  I would like something expensive though",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9998856782913208
+    }
+  },
+  {
+    "text": "thanks I need a 4 star guesthouse with free parking of course",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5833238363265991
+    }
+  },
+  {
+    "text": "Oh thank you for the name of the museum and what part of the area is this museum in? I'd also like information about the lensfield hotel",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8996925354003906
+    }
+  },
+  {
+    "text": "I am looking for places to go in the centre of town",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "find_attraction",
+      "confidence": 0.9997068643569946
+    }
+  },
+  {
+    "text": "What area of town is the hotel in?",
+    "intent": "find_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9712314009666443
+    }
+  },
+  {
+    "text": "Yes  please  for four people",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9814057350158691
+    }
+  },
+  {
+    "text": "Yes  sounds good  Can I get the reference with that too please?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9139177203178406
+    }
+  },
+  {
+    "text": "Can you please give me the confirmation number for my booking?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9211928248405457
+    }
+  },
+  {
+    "text": "Starting on wednesday please",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.703654408454895
+    }
+  },
+  {
+    "text": "do they have ample parking?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9998509883880615
+    }
+  },
+  {
+    "text": "Will it fit 8 people?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4983461797237396
+    }
+  },
+  {
+    "text": "I believe there are some colleges in the centre of town  Can you please check again?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9963420033454895
+    }
+  },
+  {
+    "text": "I would like to stay for 2 days  and it will just be me",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7173906564712524
+    }
+  },
+  {
+    "text": "No  I am not picky",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.882238507270813
+    }
+  },
+  {
+    "text": "Yes  please make my reservation at the alexander bed and breakfast",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8836303353309631
+    }
+  },
+  {
+    "text": "I am looking to stay at the carolina bed and breakfast  What availability do you have?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6137694120407104
+    }
+  },
+  {
+    "text": "The area doesn't matter  I don't need internet and I need to book it for 1 person",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.48533591628074646
+    }
+  },
+  {
+    "text": "Oh my! I totally forgot that I also need to find a place to stay  Can you find me an expensive place that is 3-star rated?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.999871551990509
+    }
+  },
+  {
+    "text": "monday would be great",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9366922378540039
+    }
+  },
+  {
+    "text": "I'd like you begin my stay on wednesday",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9908677935600281
+    }
+  },
+  {
+    "text": "yes please book it for 1",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.6990137100219727
+    }
+  },
+  {
+    "text": "Yes  I'd also like to find some lodging accommodations for the same group of people  on the same day",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9947476387023926
+    }
+  },
+  {
+    "text": "Yes  I'd like to stay at The lensfield hotel once we get to town for 4 nights",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7914178371429443
+    }
+  },
+  {
+    "text": "That is all for now  goodbye",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999377727508545
+    }
+  },
+  {
+    "text": "Yes can you please get that booked for me",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9815074801445007
+    }
+  },
+  {
+    "text": "That is everything I needed  Thank you for your help!",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9999844431877136
+    }
+  },
+  {
+    "text": "Is there another guesthouse with a 4 star rating in that area?",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9993320107460022
+    }
+  },
+  {
+    "text": "Yes if you can find a place for 5 people",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "book_train",
+      "confidence": 0.9890774488449097
+    }
+  },
+  {
+    "text": "3 nights starting on tuesday",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5115504860877991
+    }
+  },
+  {
+    "text": "Yes  that would be on tuesday please",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9656474590301514
+    }
+  },
+  {
+    "text": "try out 1 night then",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9980620741844177
+    }
+  },
+  {
+    "text": "Please book the hamilton lodge  for 6 people",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9658276438713074
+    }
+  },
+  {
+    "text": "I'll be arriving on monday",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.6255378127098083
+    }
+  },
+  {
+    "text": "We will be staying there starting sunday",
+    "intent": "book_hotel",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.8755049109458923
+    }
+  },
+  {
+    "text": "Yes that is perfect  Can you book that and give me a reference number?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8773595690727234
+    }
+  },
+  {
+    "text": "I'm looking to book a ticket for a train that leaves stevenage after 09:45",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9992612600326538
+    }
+  },
+  {
+    "text": "11 pm and I want it for three people",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.5617374181747437
+    }
+  },
+  {
+    "text": "3 of us",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7850846648216248
+    }
+  },
+  {
+    "text": "Hm  I'll take any train that will let me arrive by or before 12:30",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4539864659309387
+    }
+  },
+  {
+    "text": "On the same day as the hotel stay",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.7102913856506348
+    }
+  },
+  {
+    "text": "I would like it for friday  please  Can you please provide a reference number as well?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.7369199991226196
+    }
+  },
+  {
+    "text": "Yes book it and I need a reference number please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8243339657783508
+    }
+  },
+  {
+    "text": "Are there trains to cambridge on sunday?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9972919225692749
+    }
+  },
+  {
+    "text": "I am leaving Thurtsday at 2pm and need three tickets",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9460322260856628
+    }
+  },
+  {
+    "text": "Yes  please  Thanks",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.874067485332489
+    }
+  },
+  {
+    "text": "Yes  please  Could you give me the total travel time and train id for my records?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.999127984046936
+    }
+  },
+  {
+    "text": "Yes  that works! I would like the reference number please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9765535593032837
+    }
+  },
+  {
+    "text": "Yes book one day",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5325787663459778
+    }
+  },
+  {
+    "text": "Actually  can you give me the reference number?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9545336961746216
+    }
+  },
+  {
+    "text": "I am in ely  I need to figure out how to get to cambridge by train",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9800190925598145
+    }
+  },
+  {
+    "text": "1 should be fine  also find me a theatre  i need the area  postcode  and phone number",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.4478272497653961
+    }
+  },
+  {
+    "text": "We need 4 please  We have 2 children under 12  Do they get a special rate?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9921308755874634
+    }
+  },
+  {
+    "text": "Yes  this will be for one person only  Thank you very much",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5742396712303162
+    }
+  },
+  {
+    "text": "Yes  thank you",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9959688782691956
+    }
+  },
+  {
+    "text": "I will be leaving birmingham new street the same day as my hotel booking",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9652785658836365
+    }
+  },
+  {
+    "text": "I actually need a train going to london kings cross leaving cambridge after 14:45  For six people",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.8807054162025452
+    }
+  },
+  {
+    "text": "Yes and I will also need the reference number",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8973105549812317
+    }
+  },
+  {
+    "text": "I need to be in Stansted airport by 15:30 please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9962915778160095
+    }
+  },
+  {
+    "text": "Yes  please make the booking and email me the reference number",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.8529771566390991
+    }
+  },
+  {
+    "text": "It should arrive in cambridge by 11:15 on the same day that I made the restaurant reservation for",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9249613285064697
+    }
+  },
+  {
+    "text": "yes please  help me get train id and travel time",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9038482904434204
+    }
+  },
+  {
+    "text": "Yes please make a reservation and give me the reference number",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.845526397228241
+    }
+  },
+  {
+    "text": "Yes please! could I get the departure time  train id and travel time?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9439801573753357
+    }
+  },
+  {
+    "text": "Yes that would be great  and it'll just be me  Could you also find me a place to stay?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_hotel",
+      "confidence": 0.9943445920944214
+    }
+  },
+  {
+    "text": "Ok  thank you  One more thing  What was the price of the train ticket?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9378201365470886
+    }
+  },
+  {
+    "text": "That'd be perfect  I need three tickets on sunday",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.49364423751831055
+    }
+  },
+  {
+    "text": "I'm not sure  How much is it?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6851420402526855
+    }
+  },
+  {
+    "text": "There are two of us  and we'd like to go to norwich please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9998090863227844
+    }
+  },
+  {
+    "text": "I need a train ticket going to london liverpool st leaving cambridge anytime after 08:15 on sunday  can you help me with that?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9850476384162903
+    }
+  },
+  {
+    "text": "I would like to arrive by 20:45 and leave on a monday  It will also be for only myself",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9713818430900574
+    }
+  },
+  {
+    "text": "Great  can you help with trains  too? All 7 of us need to get there from stevenage",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9991514682769775
+    }
+  },
+  {
+    "text": "No  thank you  The lodging and train are all I need  You were so helpful  Goodbye",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7045716047286987
+    }
+  },
+  {
+    "text": "I would like to leave after 19:30 and arrive at london kings cross",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9972381591796875
+    }
+  },
+  {
+    "text": "Please book it for 3 people on a Monday",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.5056109428405762
+    }
+  },
+  {
+    "text": "That sounds like a winner  Book it please for 1 person",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_hotel",
+      "confidence": 0.7710206508636475
+    }
+  },
+  {
+    "text": "To Cambridge",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.49991828203201294
+    }
+  },
+  {
+    "text": "I want to leave on thursday",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "inform",
+      "confidence": 0.9977403879165649
+    }
+  },
+  {
+    "text": "it doesn't matter as long as I am there by 13:45 leaving leicester going to cambridge  I'll need the reference number too please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.5849868059158325
+    }
+  },
+  {
+    "text": "Yes and could I have the reference number after?",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "request",
+      "confidence": 0.9868648052215576
+    }
+  },
+  {
+    "text": "Yes please  thank you",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8607608079910278
+    }
+  },
+  {
+    "text": "Ok  I also want to find a train from cambridge to peterborough on sunday please i want to be there by 13:00",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9995102882385254
+    }
+  },
+  {
+    "text": "That's alright  I can book it later  I'm also looking to book a train",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "find_train",
+      "confidence": 0.9993336200714111
+    }
+  },
+  {
+    "text": "monday at 11:00 for 5 people please",
+    "intent": "book_train",
+    "intent_prediction": {
+      "name": "book_restaurant",
+      "confidence": 0.9863448739051819
+    }
+  },
+  {
+    "text": "Thank you so much  That's all I need today",
+    "intent": "find_police",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.999970018863678
+    }
+  }
+]

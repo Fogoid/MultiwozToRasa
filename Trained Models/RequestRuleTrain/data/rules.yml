@@ -1,0 +1,8 @@
+version: "2.0"
+
+rules:
+
+- rule: give requested info
+  steps:
+  - intent: request
+  - action: action_get_requested_information

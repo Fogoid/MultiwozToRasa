@@ -1,0 +1,1274 @@
+[
+  {
+    "text": "I would like to try saigon city",
+    "entities": [
+      {
+        "start": 20,
+        "end": 31,
+        "value": "saigon city",
+        "entity": "restaurant-name"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Yes  I hope so  Are there any chinese restaurants toward the east end of town?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 37,
+        "value": "chinese",
+        "entity": "restaurant-food"
+      },
+      {
+        "start": 61,
+        "end": 65,
+        "value": "east",
+        "entity": "restaurant-area"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 30,
+        "end": 37,
+        "confidence_entity": 0.9992964267730713,
+        "value": "chinese",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Are there any restaurants that serve proper british food in town?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 51,
+        "value": "british",
+        "entity": "restaurant-food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 37,
+        "end": 43,
+        "confidence_entity": 0.626219630241394,
+        "value": "proper",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 44,
+        "end": 51,
+        "confidence_entity": 0.9999363422393799,
+        "value": "british",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Hi there  I'm hoping you can help me  I am looking to try molecular gastronomy food  Might there be a restaurant like this in the centre of town?",
+    "entities": [
+      {
+        "start": 58,
+        "end": 78,
+        "value": "molecular gastronomy",
+        "entity": "restaurant-food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 58,
+        "end": 78,
+        "confidence_entity": 0.9988658428192139,
+        "value": "molecular gastronomy",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-area",
+        "start": 130,
+        "end": 136,
+        "confidence_entity": 0.9077817797660828,
+        "value": "centre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Could really use some grub",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 22,
+        "end": 26,
+        "confidence_entity": 0.9695131778717041,
+        "value": "grub",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm looking for the information on a restaurant called saigon city  can you provide me with their info?",
+    "entities": [
+      {
+        "start": 55,
+        "end": 66,
+        "value": "saigon city",
+        "entity": "restaurant-name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-name",
+        "start": 62,
+        "end": 66,
+        "confidence_entity": 0.9168229103088379,
+        "value": "city",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm looking for a restaurant in the centre of town with a modest price range  Can you recommend one?",
+    "entities": [
+      {
+        "start": 36,
+        "end": 42,
+        "value": "centre",
+        "entity": "restaurant-area"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-area",
+        "start": 36,
+        "end": 42,
+        "confidence_entity": 0.9997066855430603,
+        "value": "centre",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-pricerange",
+        "start": 58,
+        "end": 64,
+        "confidence_entity": 0.4974195659160614,
+        "value": "modest",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "What restaurants in the centre serve international cuisine?",
+    "entities": [
+      {
+        "start": 24,
+        "end": 30,
+        "value": "centre",
+        "entity": "restaurant-area"
+      },
+      {
+        "start": 37,
+        "end": 50,
+        "value": "international",
+        "entity": "restaurant-food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 37,
+        "end": 50,
+        "confidence_entity": 0.9996994733810425,
+        "value": "international",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like to go to an indian restaurant in the north",
+    "entities": [
+      {
+        "start": 25,
+        "end": 31,
+        "value": "indian",
+        "entity": "restaurant-food"
+      },
+      {
+        "start": 50,
+        "end": 55,
+        "value": "north",
+        "entity": "restaurant-area"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.9531257152557373,
+        "value": "indian",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 50,
+        "end": 55,
+        "confidence_entity": 0.8886041641235352,
+        "value": "north",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Do they have an opening at 13:00 on Wednesday for 5 people?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 32,
+        "value": "13:00",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-booktime",
+        "start": 27,
+        "end": 32,
+        "confidence_entity": 0.9989683628082275,
+        "value": "13:00",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 50,
+        "end": 51,
+        "confidence_entity": 0.9957910776138306,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "No  I'll have to discuss it with my wife  Can you just get me the postcode for maharajah tandoori please?",
+    "entities": [
+      {
+        "start": 66,
+        "end": 74,
+        "value": "postcode",
+        "entity": "required_info"
+      },
+      {
+        "start": 79,
+        "end": 97,
+        "value": "maharajah tandoori",
+        "entity": "restaurant-name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "required_info",
+        "start": 66,
+        "end": 74,
+        "confidence_entity": 0.9997652173042297,
+        "value": "postcode",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I will have 5 people and we would like 12:15 if possible  Thanks",
+    "entities": [
+      {
+        "start": 12,
+        "end": 13,
+        "value": "5",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 39,
+        "end": 44,
+        "value": "12:15",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-booktime",
+        "start": 39,
+        "end": 44,
+        "confidence_entity": 0.9886161684989929,
+        "value": "12:15",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "No  I just realized I'll be in the south area  Are there any that meet my criteria in the south?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 40,
+        "value": "south",
+        "entity": "restaurant-area"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will you give me the phone number  address  and postcode for graffiti  please?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 26,
+        "value": "phone",
+        "entity": "required_info"
+      },
+      {
+        "start": 35,
+        "end": 42,
+        "value": "address",
+        "entity": "required_info"
+      },
+      {
+        "start": 48,
+        "end": 56,
+        "value": "postcode",
+        "entity": "required_info"
+      },
+      {
+        "start": 61,
+        "end": 69,
+        "value": "graffiti",
+        "entity": "restaurant-name"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "required_info",
+        "start": 21,
+        "end": 26,
+        "confidence_entity": 0.9996596574783325,
+        "value": "phone",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 35,
+        "end": 42,
+        "confidence_entity": 0.9999107122421265,
+        "value": "address",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 48,
+        "end": 56,
+        "confidence_entity": 0.9998781681060791,
+        "value": "postcode",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes how about gastropubs or international in the moderate price range",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "gastropubs",
+        "entity": "restaurant-food"
+      },
+      {
+        "start": 49,
+        "end": 57,
+        "value": "moderate",
+        "entity": "restaurant-pricerange"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 14,
+        "end": 24,
+        "confidence_entity": 0.9998113512992859,
+        "value": "gastropubs",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 28,
+        "end": 41,
+        "confidence_entity": 0.9996821880340576,
+        "value": "international",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-pricerange",
+        "start": 49,
+        "end": 57,
+        "confidence_entity": 0.9975076913833618,
+        "value": "moderate",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Is there anywhere in the centre that serves mediterranean food?",
+    "entities": [
+      {
+        "start": 44,
+        "end": 57,
+        "value": "mediterranean",
+        "entity": "restaurant-food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-area",
+        "start": 25,
+        "end": 31,
+        "confidence_entity": 0.8637093901634216,
+        "value": "centre",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 44,
+        "end": 57,
+        "confidence_entity": 0.9997537732124329,
+        "value": "mediterranean",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can you try the cambridge chop house for Thursday for 5 people at 13:00 instead?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 36,
+        "value": "the cambridge chop house",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 66,
+        "end": 71,
+        "value": "13:00",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-name",
+        "start": 16,
+        "end": 36,
+        "confidence_entity": 0.9742490649223328,
+        "value": "cambridge chop house",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 66,
+        "end": 71,
+        "confidence_entity": 0.6955491900444031,
+        "value": "13:00",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes  how about expensive turkish food in the centre of town?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 32,
+        "value": "turkish",
+        "entity": "restaurant-food"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-pricerange",
+        "start": 15,
+        "end": 24,
+        "confidence_entity": 0.9982078075408936,
+        "value": "expensive",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 25,
+        "end": 32,
+        "confidence_entity": 0.9999668598175049,
+        "value": "turkish",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-area",
+        "start": 45,
+        "end": 51,
+        "confidence_entity": 0.5754168629646301,
+        "value": "centre",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "For 4 people at 15:15 on either monday or Saturday please",
+    "entities": [
+      {
+        "start": 32,
+        "end": 38,
+        "value": "monday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 4,
+        "end": 5,
+        "confidence_entity": 0.9980961680412292,
+        "value": "4",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 16,
+        "end": 21,
+        "confidence_entity": 0.9991915822029114,
+        "value": "15:15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 32,
+        "end": 38,
+        "confidence_entity": 0.9998893737792969,
+        "value": "monday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Sorry  Actually I need an expensive restaurant in the north  the first on your list would be great",
+    "entities": [
+      {
+        "start": 54,
+        "end": 59,
+        "value": "north",
+        "entity": "restaurant-area"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-pricerange",
+        "start": 26,
+        "end": 35,
+        "confidence_entity": 0.9189882874488831,
+        "value": "expensive",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'm looking for an expensive eastern european place in the south",
+    "entities": [
+      {
+        "start": 19,
+        "end": 28,
+        "value": "expensive",
+        "entity": "restaurant-pricerange"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-pricerange",
+        "start": 19,
+        "end": 28,
+        "confidence_entity": 0.9997351765632629,
+        "value": "expensive",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 29,
+        "end": 45,
+        "confidence_entity": 0.6630777716636658,
+        "value": "eastern european",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-area",
+        "start": 59,
+        "end": 64,
+        "confidence_entity": 0.9952355027198792,
+        "value": "south",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I'd like to make a reservation for saturday at 11:45  And there has been a change in plans  I will be dining alone",
+    "entities": [
+      {
+        "start": 35,
+        "end": 43,
+        "value": "saturday",
+        "entity": "restaurant-bookday"
+      },
+      {
+        "start": 47,
+        "end": 52,
+        "value": "11:45",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookday",
+        "start": 35,
+        "end": 43,
+        "confidence_entity": 0.9998730421066284,
+        "value": "saturday",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 47,
+        "end": 52,
+        "confidence_entity": 0.9989681243896484,
+        "value": "11:45",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 82,
+        "end": 84,
+        "confidence_entity": 0.745529055595398,
+        "value": "in",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I am not particular  how about moderate? I will need their phone number  address and postcode please",
+    "entities": [
+      {
+        "start": 31,
+        "end": 39,
+        "value": "moderate",
+        "entity": "restaurant-pricerange"
+      },
+      {
+        "start": 59,
+        "end": 64,
+        "value": "phone",
+        "entity": "required_info"
+      },
+      {
+        "start": 73,
+        "end": 80,
+        "value": "address",
+        "entity": "required_info"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-pricerange",
+        "start": 31,
+        "end": 39,
+        "confidence_entity": 0.7805494666099548,
+        "value": "moderate",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 59,
+        "end": 64,
+        "confidence_entity": 0.9990742206573486,
+        "value": "phone",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 73,
+        "end": 80,
+        "confidence_entity": 0.9998834133148193,
+        "value": "address",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 85,
+        "end": 93,
+        "confidence_entity": 0.9998127818107605,
+        "value": "postcode",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can I book de luca cucina and bar for 6 people at 19:15 on saturday please?",
+    "entities": [
+      {
+        "start": 11,
+        "end": 33,
+        "value": "de luca cucina and bar",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "value": "6",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 50,
+        "end": 55,
+        "value": "19:15",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 59,
+        "end": 67,
+        "value": "saturday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-name",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.7768932580947876,
+        "value": "de luca cucina",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-name",
+        "start": 30,
+        "end": 33,
+        "confidence_entity": 0.9984858632087708,
+        "value": "bar",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 38,
+        "end": 39,
+        "confidence_entity": 0.9976024031639099,
+        "value": "6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 50,
+        "end": 55,
+        "confidence_entity": 0.9990504384040833,
+        "value": "19:15",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 59,
+        "end": 67,
+        "confidence_entity": 0.9999016523361206,
+        "value": "saturday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "How about an expensive british place? I'd like a reservation for wednesday",
+    "entities": [
+      {
+        "start": 23,
+        "end": 30,
+        "value": "british",
+        "entity": "restaurant-food"
+      },
+      {
+        "start": 65,
+        "end": 74,
+        "value": "wednesday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-pricerange",
+        "start": 13,
+        "end": 22,
+        "confidence_entity": 0.7612557411193848,
+        "value": "expensive",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-food",
+        "start": 23,
+        "end": 30,
+        "confidence_entity": 0.9994117021560669,
+        "value": "british",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 65,
+        "end": 74,
+        "confidence_entity": 0.9990166425704956,
+        "value": "wednesday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "the oak bistro sounds fabulous  Can I get a table there on sunday at 18:30? There will be 6 of us",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "the oak bistro",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 59,
+        "end": 65,
+        "value": "sunday",
+        "entity": "restaurant-bookday"
+      },
+      {
+        "start": 69,
+        "end": 74,
+        "value": "18:30",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 90,
+        "end": 91,
+        "value": "6",
+        "entity": "restaurant-bookpeople"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-food",
+        "start": 8,
+        "end": 14,
+        "confidence_entity": 0.991256594657898,
+        "value": "bistro",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 59,
+        "end": 65,
+        "confidence_entity": 0.9999058246612549,
+        "value": "sunday",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 69,
+        "end": 74,
+        "confidence_entity": 0.9975892305374146,
+        "value": "18:30",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 90,
+        "end": 91,
+        "confidence_entity": 0.9980783462524414,
+        "value": "6",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Can I book at the ugly duckling for 4 people  at 12:00 on wednesday please?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 31,
+        "value": "ugly duckling",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "value": "4",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 49,
+        "end": 54,
+        "value": "12:00",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 58,
+        "end": 67,
+        "value": "wednesday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 36,
+        "end": 37,
+        "confidence_entity": 0.9986940026283264,
+        "value": "4",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 49,
+        "end": 54,
+        "confidence_entity": 0.9989443421363831,
+        "value": "12:00",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 58,
+        "end": 67,
+        "confidence_entity": 0.9996558427810669,
+        "value": "wednesday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Great! I'd like a table at frankie and bennys for 7 people at 14:00 on friday",
+    "entities": [
+      {
+        "start": 27,
+        "end": 45,
+        "value": "frankie and bennys",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "value": "7",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 62,
+        "end": 67,
+        "value": "14:00",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 71,
+        "end": 77,
+        "value": "friday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-name",
+        "start": 27,
+        "end": 34,
+        "confidence_entity": 0.9995819926261902,
+        "value": "frankie",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-name",
+        "start": 39,
+        "end": 45,
+        "confidence_entity": 0.9911392331123352,
+        "value": "bennys",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 50,
+        "end": 51,
+        "confidence_entity": 0.9956497550010681,
+        "value": "7",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 62,
+        "end": 67,
+        "confidence_entity": 0.9987623691558838,
+        "value": "14:00",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 71,
+        "end": 77,
+        "confidence_entity": 0.999702513217926,
+        "value": "friday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I want to make a booking at fitzbillies restaurant  It will be for 8 people on friday at 12:00",
+    "entities": [
+      {
+        "start": 28,
+        "end": 50,
+        "value": "fitzbillies restaurant",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 67,
+        "end": 68,
+        "value": "8",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 79,
+        "end": 85,
+        "value": "friday",
+        "entity": "restaurant-bookday"
+      },
+      {
+        "start": 89,
+        "end": 94,
+        "value": "12:00",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 67,
+        "end": 68,
+        "confidence_entity": 0.9952060580253601,
+        "value": "8",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 79,
+        "end": 85,
+        "confidence_entity": 0.9993405938148499,
+        "value": "friday",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 89,
+        "end": 94,
+        "confidence_entity": 0.977382481098175,
+        "value": "12:00",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Only the best for my family    we'll take the expensive one  Book us a table for 5 at 14:00 on thursday",
+    "entities": [
+      {
+        "start": 46,
+        "end": 55,
+        "value": "expensive",
+        "entity": "restaurant-pricerange"
+      },
+      {
+        "start": 81,
+        "end": 82,
+        "value": "5",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 86,
+        "end": 91,
+        "value": "14:00",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 95,
+        "end": 103,
+        "value": "thursday",
+        "entity": "restaurant-bookday"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 81,
+        "end": 82,
+        "confidence_entity": 0.9895399212837219,
+        "value": "5",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 86,
+        "end": 91,
+        "confidence_entity": 0.9974695444107056,
+        "value": "14:00",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 95,
+        "end": 103,
+        "confidence_entity": 0.9978131055831909,
+        "value": "thursday",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Yes please for 1 person saturday at 19:15 please",
+    "entities": [
+      {
+        "start": 15,
+        "end": 16,
+        "value": "1",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 24,
+        "end": 32,
+        "value": "saturday",
+        "entity": "restaurant-bookday"
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "value": "19:15",
+        "entity": "restaurant-booktime"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookday",
+        "start": 24,
+        "end": 32,
+        "confidence_entity": 0.9996769428253174,
+        "value": "saturday",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.9872382879257202,
+        "value": "19:15",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "OK  can you book a table for 6 at 12:00 on tuesday at the varsity restaurant? I will need a reference number too  please",
+    "entities": [
+      {
+        "start": 29,
+        "end": 30,
+        "value": "6",
+        "entity": "restaurant-bookpeople"
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "value": "12:00",
+        "entity": "restaurant-booktime"
+      },
+      {
+        "start": 43,
+        "end": 50,
+        "value": "tuesday",
+        "entity": "restaurant-bookday"
+      },
+      {
+        "start": 54,
+        "end": 76,
+        "value": "the varsity restaurant",
+        "entity": "restaurant-name"
+      },
+      {
+        "start": 92,
+        "end": 101,
+        "value": "reference",
+        "entity": "required_info"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 29,
+        "end": 30,
+        "confidence_entity": 0.9971501231193542,
+        "value": "6",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-booktime",
+        "start": 34,
+        "end": 39,
+        "confidence_entity": 0.9770445227622986,
+        "value": "12:00",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-bookday",
+        "start": 43,
+        "end": 50,
+        "confidence_entity": 0.9989283680915833,
+        "value": "tuesday",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-name",
+        "start": 58,
+        "end": 65,
+        "confidence_entity": 0.9784471392631531,
+        "value": "varsity",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "required_info",
+        "start": 92,
+        "end": 101,
+        "confidence_entity": 0.9998619556427002,
+        "value": "reference",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I would like a reservation for 2 to the peking restaurant",
+    "entities": [
+      {
+        "start": 31,
+        "end": 32,
+        "value": "2",
+        "entity": "restaurant-bookpeople"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "restaurant-bookpeople",
+        "start": 31,
+        "end": 32,
+        "confidence_entity": 0.9980915188789368,
+        "value": "2",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "restaurant-name",
+        "start": 40,
+        "end": 57,
+        "confidence_entity": 0.9995279312133789,
+        "value": "peking restaurant",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

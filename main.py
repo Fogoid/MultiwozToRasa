@@ -1,7 +1,7 @@
 import json
+import os
 import re
 from Task import Task
-
 
 ####################################################
 #                AUXILIARY FUNCTIONS               #
@@ -18,6 +18,14 @@ def AddSynonim(key, synonim):
         if synonim not in synonims[key]:
             synonims[key] += [synonim,]
 
+def findRequestedSlotsInUtterance(slots, utter):
+    found_values = []
+    for s in slots:
+        s = s.split("-")[1]
+        utter, found_value = findSlotUsingSpaces(s, utter)
+        found_values = found_values + [found_value,] if found_value != None else found_values
+    return utter, found_values
+
 def findSlotUsingSpaces(slot, utter):
     modified_slot = slot
     index = 0
@@ -25,18 +33,25 @@ def findSlotUsingSpaces(slot, utter):
         pattern = re.compile(modified_slot, flags=re.IGNORECASE)
         result = pattern.search(utter)
         if result != None:
-            replaceable = "[{}]({})".format(modified_slot, "required_info")
-            return pattern.sub(replaceable, utter)
+            for r in result.regs:
+                previous_letter = utter[r[0] - 1] if r[0] != 0 else " "
+                next_letter = utter[r[1]] if r[1] < len(utter) else " "
+                if previous_letter != " ":
+                    continue
+                elif re.search(r"[a-zA-Z]", next_letter, re.IGNORECASE) != None:
+                    while r[1] < len(utter) and utter[r[1]] not in [" ", ".", ",", "?"]:
+                        r = (r[0], r[1] + 1)
+                    modified_slot = utter[r[0]:r[1]]
+                elif next_letter not in [" ", ".", ",", "?"]:
+                    continue
+                
+                replaceable = "[{}]({})".format(modified_slot, "required_info")
+                return utter[:r[0]] + replaceable + utter[r[1]:], modified_slot
+            index += 1
         else:
             modified_slot = slot[:index] + " " + slot[index:]
             index += 1
-    return utter
-
-def findRequestedSlotsInUtterance(slots, utter):
-    for s in slots:
-        s = s.split("-")[1]
-        utter = findSlotUsingSpaces(s, utter)
-    return utter
+    return utter, None
 
 def getBestIntent(current, slots):
     intent = "NONE"
@@ -85,6 +100,16 @@ def isPresent(slot_list, slot):
             return True
     return False 
 
+def validDialog(dialog):
+    if re.search(r"SNG", dialog["dialogue_id"]) == None or dialog["services"] != ["restaurant"]:
+        return False
+    for turn in dialog["turns"]:
+        if turn["speaker"] == "SYSTEM":
+            continue
+        frames = list(filter(lambda x: x["state"]["active_intent"] != "NONE" and x["service"] != "restaurant", turn["frames"]))
+        if frames != []:
+            return False
+    return True
 ####################################################
 #                CONTROL VARIABLES                 #
 ####################################################
@@ -92,7 +117,7 @@ def isPresent(slot_list, slot):
 # variaveis necessárias para o dominio
 intents = { 
     "inform" : Task("inform"), 
-    # "request" : Task("request"), 
+    "request" : Task("request"), 
     "goodbye": Task("goodbye"), 
     "dont_know" : Task("dont_know") 
     }
@@ -117,11 +142,11 @@ number_regex = r"(\d+)"
 
 # Carregar diálogos dos ficheiros do multiwoz
 json_file = []
-with open("resources\\multiwoz\\dev\\dialogues_001.json") as f:
-    json_file += json.load(f)
-
-with open("resources\\multiwoz\\dev\\dialogues_002.json") as f:
-    json_file += json.load(f)
+directory = "resources\\multiwoz\\dev\\"
+for _, _, files in os.walk(directory):
+    for file in files:
+        with open(directory + file) as f:
+            json_file += list(filter(lambda x: validDialog(x), json.load(f)))
 
 ####################################################
 #      INTENTS, ENTITIES AND SLOTS DEFINITION      #
@@ -134,13 +159,15 @@ for item in json_file:
     verified_intents = []
     last_turn = None
 
-    for turn in item["turns"]:
+    for t in range(len(item["turns"])):
+        turn = item["turns"][t]
         # Só se preocupa com as falas do utilizador
         if turn["speaker"] == "SYSTEM":
             continue
 
         turn["chosen_intents"] = []
         utterance = turn["utterance"]
+        utterance = re.sub(r"[.,]", " ", utterance)
         
         # Get slots from this turn
         last_turn_slots = {}
@@ -176,15 +203,12 @@ for item in json_file:
 
             current_intent = turn_best_intent
 
-        # requested_slots = getRequestedSlots(turn["frames"])
-        # if requested_slots != []:
-        #     chosen_intents += ["request",]
-        #     utterance = findRequestedSlotsInUtterance(requested_slots, utterance)
-
         # Encontrar os valores dos slots na utterance
+        new_this_turn_slots = this_turn_slots.copy()
         frames = list(filter(lambda x: x["service"] in this_turn_slots.keys(), turn["frames"]))
         for frame in frames:
             for slot in frame["state"]["slot_values"].keys():
+                original_utterance = utterance
                 if slot not in this_turn_slots[frame["service"]]:
                     continue
                 slot_values = frame["state"]["slot_values"][slot]
@@ -200,7 +224,8 @@ for item in json_file:
                             elif re.search(r"[a-zA-Z]", next_letter, re.IGNORECASE) != None:
                                 while r[1] < len(utterance) and utterance[r[1]] not in [" ", ".", ",", "?"]:
                                     r = (r[0], r[1] + 1)
-                                AddSynonim(val, utterance[r[0]:r[1]])
+                                if re.search(time_regex, utterance[r[0]:r[1]], re.IGNORECASE) == None and re.search(number_regex, utterance[r[0]:r[1]], re.IGNORECASE) == None:
+                                    AddSynonim(val, utterance[r[0]:r[1]])
                                 val = utterance[r[0]:r[1]]
                             elif next_letter not in [" ", ".", ",", "?"]:
                                 continue
@@ -208,6 +233,20 @@ for item in json_file:
                             replaceable = "[{}]({})".format(val, slot)
                             utterance = utterance[:r[0]] + replaceable + utterance[r[1]:]
                             break
+                if utterance == original_utterance:
+                    new_this_turn_slots[frame["service"]].remove(slot)
+                    if new_this_turn_slots[frame["service"]] == []:
+                        del new_this_turn_slots[frame["service"]]
+        this_turn_slots = new_this_turn_slots
+
+        # Obter os slots que são pedidos pelo utilizador.
+        turn["all_requested"] = []
+        requested_slots = getRequestedSlots(turn["frames"])
+        if requested_slots != []:
+            utterance, requested_info = findRequestedSlotsInUtterance(requested_slots, utterance)
+            if requested_info != []:
+                chosen_intents += ["request"]
+                turn["all_requested"] = requested_info
 
         # Get multiple intent classification
         if chosen_intents[0] == "NONE":
@@ -222,11 +261,13 @@ for item in json_file:
         
         turn["chosen_intents"] = chosen_intents
         turn_intent_key = chosen_intents[0]
-        for index in range(1, len(chosen_intents)):
-            turn_intent_key += "+" + chosen_intents[index]
+
+        # Uncomment for multiple intents
+        # for index in range(1, len(chosen_intents)):
+        #     turn_intent_key += "+" + chosen_intents[index]
+
         turn["intent_key"] = turn_intent_key
         training_data[turn_intent_key] = [utterance,] if turn_intent_key not in training_data.keys() else training_data[turn_intent_key] + [utterance,]
-
 
         turn["utterance_slots"] = this_turn_slots
         last_turn = turn
@@ -234,7 +275,8 @@ for item in json_file:
 # Computa os slots obrigatórios para uma task ser dada como completa
 for i in intents.values():
     i.computeSlots()
-    print(i.mandatory)
+    print(i.name, i.mandatory)
+
 
 # ####################################################
 # #         RESPONSES AND ACTIONS DEFINITION         #
@@ -283,16 +325,28 @@ for item in json_file:
                         responses += [action,]
                 
                 story += ["  - intent: {}\n".format(turn["intent_key"]),]
-                if turn["utterance_slots"] != {}:
+                if turn["utterance_slots"] != {} or turn["all_requested"] != []:
                     story += ["    entities:\n",]
                     for s in turn["utterance_slots"].keys():
                         sls = next(filter(lambda x: x["service"] == s, turn["frames"]))["state"]["slot_values"]
                         for slot in turn["utterance_slots"][s]:
                             story += ["    - {}: {}\n".format(slot, sls[slot][0])]
+                    
+                    for r in turn["all_requested"]:
+                        story += ["    - requested_info: {}\n".format(r)]
+                    
                 story += ["  - action: {}\n".format(action),]
-            
-            if "request" in turn["chosen_intents"]:
-                story += ["  - action: action_get_requested_information\n",]
+
+                if "request" in turn["chosen_intents"]:
+                    story += ["  - action: action_get_requested_information\n",]
+            # Uncomment if multiple intents
+            # else:
+            #     story += ["  - intent: request\n".format(),]
+            #     story += ["    entities:\n",]
+            #     for r in turn["all_requested"]:
+            #         story += ["    - requested_info: {}\n".format(r)]
+                    
+            #     story += ["  - action: action_get_requested_information\n",]
 
     if specific_intent == "dont_know":
         continue
@@ -306,8 +360,6 @@ for item in json_file:
 del intents["dont_know"]
 del training_data["dont_know"]
 del intents["NONE"]
-
-print(slots)
 
 # Escrever o domain
 # Os slots estão a ser considerados como entidades
@@ -373,3 +425,16 @@ with open("Model\\data\\stories.yml", "w") as f:
             stories_string += step
         stories_string += "\n"
     f.write(stories_string)
+
+#Comment if multiple intents
+#Escrever as rules
+with open("Model\\data\\rules.yml", "w") as f:
+    rules_string = '''version: \"2.0\"
+
+rules:
+
+- rule: give requested info
+  steps:
+  - intent: request
+  - action: action_get_requested_information'''
+    f.write(rules_string)

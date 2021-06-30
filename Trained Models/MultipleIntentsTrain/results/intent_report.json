@@ -1,0 +1,228 @@
+{
+  "book_hotel+request": {
+    "precision": 0.45454545454545453,
+    "recall": 0.5263157894736842,
+    "f1-score": 0.4878048780487805,
+    "support": 19,
+    "confused_with": {
+      "book_hotel": 6,
+      "request": 2
+    }
+  },
+  "find_hotel": {
+    "precision": 0.8925831202046036,
+    "recall": 0.9064935064935065,
+    "f1-score": 0.8994845360824741,
+    "support": 385,
+    "confused_with": {
+      "inform": 23,
+      "goodbye": 5
+    }
+  },
+  "find_taxi+request": {
+    "precision": 0.6923076923076923,
+    "recall": 0.8571428571428571,
+    "f1-score": 0.7659574468085107,
+    "support": 21,
+    "confused_with": {
+      "inform+request": 3
+    }
+  },
+  "find_attraction": {
+    "precision": 0.8764845605700713,
+    "recall": 0.9510309278350515,
+    "f1-score": 0.9122373300370828,
+    "support": 388,
+    "confused_with": {
+      "inform": 5,
+      "goodbye": 5
+    }
+  },
+  "book_train+request": {
+    "precision": 0.8380952380952381,
+    "recall": 0.8380952380952381,
+    "f1-score": 0.8380952380952381,
+    "support": 105,
+    "confused_with": {
+      "request": 14,
+      "inform+request": 1
+    }
+  },
+  "find_train": {
+    "precision": 0.9204081632653062,
+    "recall": 0.9356846473029046,
+    "f1-score": 0.9279835390946504,
+    "support": 482,
+    "confused_with": {
+      "inform": 21,
+      "find_restaurant": 4
+    }
+  },
+  "find_restaurant": {
+    "precision": 0.883668903803132,
+    "recall": 0.8997722095671982,
+    "f1-score": 0.891647855530474,
+    "support": 439,
+    "confused_with": {
+      "inform": 21,
+      "book_restaurant": 6
+    }
+  },
+  "goodbye": {
+    "precision": 0.9681467181467182,
+    "recall": 0.9833333333333333,
+    "f1-score": 0.97568093385214,
+    "support": 1020,
+    "confused_with": {
+      "book_train": 5,
+      "request": 3
+    }
+  },
+  "request": {
+    "precision": 0.9079601990049752,
+    "recall": 0.9323116219667944,
+    "f1-score": 0.91997479521109,
+    "support": 783,
+    "confused_with": {
+      "inform+request": 16,
+      "find_hospital+request": 9
+    }
+  },
+  "find_taxi": {
+    "precision": 0.9251336898395722,
+    "recall": 0.9057591623036649,
+    "f1-score": 0.9153439153439152,
+    "support": 191,
+    "confused_with": {
+      "inform": 10,
+      "find_taxi+request": 3
+    }
+  },
+  "book_hotel": {
+    "precision": 0.8652173913043478,
+    "recall": 0.8540772532188842,
+    "f1-score": 0.8596112311015119,
+    "support": 233,
+    "confused_with": {
+      "inform": 12,
+      "book_hotel+request": 6
+    }
+  },
+  "find_train+request": {
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1-score": 0.6666666666666665,
+    "support": 8,
+    "confused_with": {
+      "request": 2
+    }
+  },
+  "inform": {
+    "precision": 0.9037626628075254,
+    "recall": 0.8508174386920981,
+    "f1-score": 0.8764912280701754,
+    "support": 1468,
+    "confused_with": {
+      "find_attraction": 44,
+      "find_restaurant": 41
+    }
+  },
+  "book_restaurant": {
+    "precision": 0.7935943060498221,
+    "recall": 0.8643410852713178,
+    "f1-score": 0.8274582560296846,
+    "support": 258,
+    "confused_with": {
+      "inform": 11,
+      "book_restaurant+request": 7
+    }
+  },
+  "find_hotel+request": {
+    "precision": 0.8,
+    "recall": 0.25,
+    "f1-score": 0.38095238095238093,
+    "support": 16,
+    "confused_with": {
+      "request": 8,
+      "inform": 2
+    }
+  },
+  "find_restaurant+request": {
+    "precision": 0.2,
+    "recall": 0.2,
+    "f1-score": 0.20000000000000004,
+    "support": 15,
+    "confused_with": {
+      "request": 6,
+      "find_restaurant": 2
+    }
+  },
+  "inform+request": {
+    "precision": 0.7290322580645161,
+    "recall": 0.7243589743589743,
+    "f1-score": 0.7266881028938906,
+    "support": 156,
+    "confused_with": {
+      "request": 11,
+      "find_attraction+request": 10
+    }
+  },
+  "find_police": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "goodbye": 1,
+      "find_police+request": 1
+    }
+  },
+  "book_train": {
+    "precision": 0.8603351955307262,
+    "recall": 0.8020833333333334,
+    "f1-score": 0.8301886792452831,
+    "support": 192,
+    "confused_with": {
+      "inform": 13,
+      "find_train": 9
+    }
+  },
+  "book_restaurant+request": {
+    "precision": 0.48,
+    "recall": 0.3076923076923077,
+    "f1-score": 0.37500000000000006,
+    "support": 39,
+    "confused_with": {
+      "book_restaurant": 20,
+      "request": 4
+    }
+  },
+  "find_attraction+request": {
+    "precision": 0.5,
+    "recall": 0.4358974358974359,
+    "f1-score": 0.4657534246575343,
+    "support": 39,
+    "confused_with": {
+      "request": 15,
+      "inform+request": 5
+    }
+  },
+  "micro avg": {
+    "precision": 0.8912730184147318,
+    "recall": 0.8892794376098418,
+    "f1-score": 0.8902751119641714,
+    "support": 6259
+  },
+  "macro avg": {
+    "precision": 0.7186321692161762,
+    "recall": 0.7035812915227898,
+    "f1-score": 0.7020485922724516,
+    "support": 6259
+  },
+  "weighted avg": {
+    "precision": 0.8903028765688327,
+    "recall": 0.8892794376098418,
+    "f1-score": 0.8888209464946134,
+    "support": 6259
+  }
+}

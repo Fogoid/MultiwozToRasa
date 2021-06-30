@@ -1,0 +1,277 @@
+version: "2.0"
+
+nlu:
+- regex: restaurant-bookpeople
+  examples: |
+    - (\d+)
+
+- regex: restaurant-booktime
+  examples: |
+    - (\d){2}:(\d){2}
+
+- intent: find_restaurant
+  examples: |
+    - Hi  I'm looking for a restaurant with [modern european](restaurant-food) food  It should be in the [moderate](restaurant-pricerange) price range 
+    - Hello  Can you suggest a [french](restaurant-food) restaurant in the [north](restaurant-area) end?
+    - I'd like to find a resturant that serves [cheap](restaurant-pricerange) [chinese](restaurant-food) food!
+    - I'd like to find an [expensive](restaurant-pricerange) place to eat in the [south](restaurant-area) 
+    - I'm looking for a place to eat in the [east](restaurant-area) that is [expensive](restaurant-pricerange) 
+    - I need a restaurant located in the [centre](restaurant-area) for a [moderate](restaurant-pricerange) price 
+    - Can you help me find an [afghan](restaurant-food) restaurant on the [west](restaurant-area) side of town?
+    - Are there any [portuguese](restaurant-food) restaurants in Cambridge?
+    - Hi  Are there any [expensive](restaurant-pricerange) [indian](restaurant-food) restaurants in town?
+    - Hi  can you help me find a restaurant in the [centre](restaurant-area) area?
+    - I am looking for a [mexican](restaurant-food) restaurant in the [centre](restaurant-area) 
+    - I'm looking for a place to dine that serves [british](restaurant-food) food  It should be in the [moderate](restaurant-pricerange) price range 
+    - I would like to try [saigon city](restaurant-name) 
+    - I am looking at a place to eat that serves [venetian](restaurant-food) food in the [centre](restaurant-area) 
+    - Is there an [expensive](restaurant-pricerange) [african](restaurant-food) restaurant in town 
+    - I am looking for a place serving [indian](restaurant-food) food in the [moderate](restaurant-pricerange) price range
+    - Yes I am looking for information on a restaurant called [bangkok city](restaurant-name) 
+    - Hello  I'm looking for a [cheap](restaurant-pricerange) place to eat in the [centre](restaurant-area)  Can you help me?
+    - Yes  I hope so  Are there any [chinese](restaurant-food) restaurants toward the [east](restaurant-area) end of town?
+    - Hi  I am looking for a [cheap](restaurant-pricerange) restaurant in the town [centre](restaurant-area) please 
+    - I am looking for a restaurant serving [chinese](restaurant-food) food in the [centre](restaurant-area) part of town 
+    - Hi  I'm looking for restaurants in the area that serve [british](restaurant-food) cuisine  Could you give me some suggestions?
+    - Can you help me find a restaurant that serves [african](restaurant-food) food with a [moderate](restaurant-pricerange) price range please
+    - I'm looking for an [indian](restaurant-food) restaurant  preferably in the [centre](restaurant-area) of town 
+    - I am looking for a restaurant  The restaurant should be in the [moderate](restaurant-pricerange) price range and should be in the [east](restaurant-area)
+    - I'm looking for a place to dine on the [south](restaurant-area) side of town  Please find a place that's in the [expensive](restaurant-pricerange) price range 
+    - I am looking for a [cheap](restaurant-pricerange) restaurant in the [centre](restaurant-area) 
+    - I'm looking for an [italian](restaurant-food) restaurant on the [south](restaurant-area) side of town 
+    - I am looking for a place to dine  The restaurant should be in the [expensive](restaurant-pricerange) price range and should serve [italian](restaurant-food) food
+    - Are there any restaurants that serve proper [british](restaurant-food) food in town?
+    - Hi I am looking for a restaurant in the [centre](restaurant-area) of town serving [north indian](restaurant-food) food 
+    - Good Morning  are there any [expensive](restaurant-pricerange) restaurants in the city [centre](restaurant-area)?
+    - Hi there  I'm hoping you can help me  I am looking to try [molecular gastronomy](restaurant-food) food  Might there be a restaurant like this in the centre of town?
+    - I am looking for a place to dine  The restaurant should be [expensive](restaurant-pricerange) and should serve [chinese](restaurant-food) food 
+    - I'm looking for a place to dine in the [centre](restaurant-area) 
+    - I would like to find an [expensive](restaurant-pricerange) restaurant in the [centre](restaurant-area) of town please 
+    - Could really use some grub 
+    - I am looking for a restaurant  The restaurant should serve [indian](restaurant-food) food and should be in the [expensive](restaurant-pricerange) price range
+    - Hi! Are there any [asian oriental](restaurant-food) restaurants in the center of town?
+    - Are there any [british](restaurant-food) restaurants in the [centre](restaurant-area)?
+    - I would like a [british](restaurant-food) food restaurant in the [centre](restaurant-area) 
+    - I am looking for a high end [indian](restaurant-food) restaurant  are there any in town?
+    - I need a [cheap](restaurant-pricerange) [spanish](restaurant-food) restaurant  Are there any around?
+    - am looking for a place to dine it should be in the [centre](restaurant-area) and should be in the [expensive](restaurant-pricerange) price range
+    - I am looking for a restaurant that serves [canapes](restaurant-food) in the [east](restaurant-area) 
+    - I'd like to find some [expensive](restaurant-pricerange) [mexican](restaurant-food) cuisine 
+    - I'm trying to find a [cheap](restaurant-pricerange) [asian](restaurant-food) restaurant to have dinner at tonight  What kind of options are available for me?
+    - I'm looking for a specific restaurant  It's called [india house](restaurant-name)  Can you help with this?
+    - I'm looking for a restaurant called [la margherita](restaurant-name) 
+    - I'm looking for the information on a restaurant called [saigon city](restaurant-name)  can you provide me with their info?
+    - I'm looking for a restaurant in the [centre](restaurant-area) of town with a modest price range  Can you recommend one?
+    - Yes I am looking for an [expensive](restaurant-pricerange) restaurant in the [south](restaurant-area) of town 
+    - What restaurants in the [centre](restaurant-area) serve [international](restaurant-food) cuisine?
+    - I am looking for a restaurant  The restaurant should be in the [north](restaurant-area) and should serve [italian](restaurant-food) food
+    - I need help finding an [expensive](restaurant-pricerange) place to eat in the [west](restaurant-area) please 
+    - Hi  I was wondering if there are any [eastern european](restaurant-food) type restaurants in the [south](restaurant-area) part of the city?
+    - I would like to go to an [indian](restaurant-food) restaurant in the [north](restaurant-area) 
+    - I'm looking for a place to eat in the [centre](restaurant-area) that serves [chinese](restaurant-food) food 
+
+- intent: inform
+  examples: |
+    - Doesn't really matter  Is there one in the [centre](restaurant-area)?
+    - I really don't have a preference  How about [chinese](restaurant-food)? I will need their [phone](required_info) number and [postcode](required_info) please 
+    - I would like a table at [14:00](restaurant-booktime) on Wednesday for [5](restaurant-bookpeople) people 
+    - Do they have an opening at [13:00](restaurant-booktime) on Wednesday for 5 people?
+    - Try a different cuisine  Just an [expensive](restaurant-pricerange) restaurant 
+    - [indian](restaurant-food) food please  What are the options?
+    - No  I'll have to discuss it with my wife  Can you just get me the [postcode](required_info) for [maharajah tandoori](restaurant-name) please?
+    - If one of them has a [moderate](restaurant-pricerange) price range please give me that address  If not tell me about [turkish](restaurant-food) restaurants instead 
+    - I would prefer a restaurant in the [west](restaurant-area) side of town 
+    - I'm in the mood for [italian](restaurant-food) food  Which is your favorite?
+    - How about an [indian](restaurant-food) restaurant then?
+    - Do you have any [chinese](restaurant-food) restaurants?
+    - I was hoping for an [expensive](restaurant-pricerange) restaurant 
+    - Oh no  Can you get us in at [13:15](restaurant-booktime) then?
+    - Yes  I'd love [chinese](restaurant-food) 
+    - I prefer [creative](restaurant-food) food  please 
+    - How about one that serves [indian](restaurant-food) food?
+    - Try [17:30](restaurant-booktime)  okay?
+    - I am looking for something [expensive](restaurant-pricerange) 
+    - Is there something available in the [west](restaurant-area)?
+    - I don't care about the price range  However  I need to confirm that the restaurant serves British food and is in the [centre](restaurant-area) of town 
+    - Yes how about [asian](restaurant-food) food in the same price range?
+    - I would prefer [cheap](restaurant-pricerange) restaurants 
+    - The restaurant should serve [italian](restaurant-food) food 
+    - I will have [5](restaurant-bookpeople) people and we would like [12:15](restaurant-booktime) if possible  Thanks 
+    - Yes  may I have the [address](required_info)  [postcode](required_info)  and [phone](required_info) number for [golden house](restaurant-name)? I'll book it myself 
+    - How about at [13:00](restaurant-booktime) at same time?
+    - No  I just realized I'll be in the [south](restaurant-area) area  Are there any that meet my criteria in the south?
+    - [west](restaurant-area)  if possible 
+    - Will you give me the [phone](required_info) number  [address](required_info)  and [postcode](required_info) for [graffiti](restaurant-name)  please?
+    - That's too bad  How about [chinese](restaurant-food)?
+    - How about [12:30](restaurant-booktime)?
+    - Yes how about [gastropubs](restaurant-food) or international in the [moderate](restaurant-pricerange) price range 
+    - how about [13:00](restaurant-booktime) then?
+    - Is there anywhere that serves [middle eastern](restaurant-food) food?
+    - Is there anywhere in the centre that serves [mediterranean](restaurant-food) food?
+    - I'd like something in the [expensive](restaurant-pricerange) price range 
+    - Somewhere in the [centre](restaurant-area)  I'm looking for some [traditional](restaurant-food) food 
+    - Ok  how about [lebanese](restaurant-food) food?
+    - How about at [11:00](restaurant-booktime) instead?
+    - Something [moderately](restaurant-pricerange) priced would be great 
+    - I'd like an [expensive](restaurant-pricerange) restaurant please 
+    - Can we make it for [11:00](restaurant-booktime)?
+    - Let's try [italian](restaurant-food) instead 
+    - Actually  I change my mind  I think I want to stick with [british](restaurant-food) food after all  Can you suggest any one thats in the centre of town?
+    - Can you try [the cambridge chop house](restaurant-name) for Thursday for 5 people at [13:00](restaurant-booktime) instead?
+    - The restaurant should be in the [west](restaurant-area) 
+    - I would like a restaurant in the [centre](restaurant-area) 
+    - Yes  I am looking for a restaurant that offers [vegetarian](restaurant-food) options 
+    - Yes  how about expensive [turkish](restaurant-food) food in the centre of town?
+    - Okay  how about the same time for [saturday](restaurant-bookday)?
+    - For 4 people at 15:15 on either [monday](restaurant-bookday) or Saturday please 
+    - Is the [meze bar restaurant](restaurant-name) available for [saturday](restaurant-bookday) same time?
+    - How about [italian](restaurant-food) food?
+    - How about [15:15](restaurant-booktime) then?
+    - Okay let's try [19:00](restaurant-booktime) instead 
+    - Sorry  Actually I need an expensive restaurant in the [north](restaurant-area)  the first on your list would be great 
+    - How about a place in the [moderate](restaurant-pricerange) price range?
+    - Is that restaurant [cheap](restaurant-pricerange)?
+    - Yes  I would like eat [indian](restaurant-food) food  where I can eat Search Chicken Tikka Masala 
+    - I'm looking for an [expensive](restaurant-pricerange) eastern european place in the south 
+    - How about a [chinese](restaurant-food) restaurant?
+    - I'd like to make a reservation for [saturday](restaurant-bookday) at [11:45](restaurant-booktime)  And there has been a change in plans  I will be dining alone 
+    - How about the [moderate](restaurant-pricerange) one? May I have their [address](required_info)  please?
+    - I am not particular  how about [moderate](restaurant-pricerange)? I will need their [phone](required_info) number  [address](required_info) and postcode please 
+
+- intent: book_restaurant
+  examples: |
+    - Can I book [de luca cucina and bar](restaurant-name) for [6](restaurant-bookpeople) people at [19:15](restaurant-booktime) on [saturday](restaurant-bookday) please?
+    - How about an expensive [british](restaurant-food) place? I'd like a reservation for [wednesday](restaurant-bookday) 
+    - I am looking just for any restaurant available for [5](restaurant-bookpeople) people at [13:45](restaurant-booktime) on [saturday](restaurant-bookday) 
+    - Yes  I need a reservation for [1](restaurant-bookpeople) people at [14:00](restaurant-booktime) on [monday](restaurant-bookday) 
+    - Great  Can you book a table for [1](restaurant-bookpeople) on [saturday](restaurant-bookday) at [12:45](restaurant-booktime)?
+    - [the oak bistro](restaurant-name) sounds fabulous  Can I get a table there on [sunday](restaurant-bookday) at [18:30](restaurant-booktime)? There will be [6](restaurant-bookpeople) of us 
+    - [5](restaurant-bookpeople) people on a [wednesday](restaurant-bookday) at [19:45](restaurant-booktime) 
+    - Can I book at the [ugly duckling](restaurant-name) for [4](restaurant-bookpeople) people  at [12:00](restaurant-booktime) on [wednesday](restaurant-bookday) please?
+    - The area does not matter  The [curry prince](restaurant-name) sounds good  Please book a table for [7](restaurant-bookpeople) people at [19:30](restaurant-booktime) on [tuesday](restaurant-bookday) 
+    - Yes  [5](restaurant-bookpeople) people  [friday](restaurant-bookday) at [14:15](restaurant-booktime) 
+    - Great can you book a table for [1](restaurant-bookpeople) at [19:30](restaurant-booktime) on [monday](restaurant-bookday)?
+    - The [kohinoor](restaurant-name) sounds good  Can you reserve a table for [4](restaurant-bookpeople) on [wednesday](restaurant-bookday)? Let's say    [18:30](restaurant-booktime) for the time if it's available 
+    - That sounds great! Yes  please! Book a table for [3](restaurant-bookpeople) people at [15:45](restaurant-booktime) on [friday](restaurant-bookday) 
+    - Yes  For [6](restaurant-bookpeople) people at [19:30](restaurant-booktime) on [friday](restaurant-bookday)  please  I'll need the [reference](required_info) number 
+    - Will you please book a table for [6](restaurant-bookpeople) at [13:45](restaurant-booktime) on [friday](restaurant-bookday)?
+    - Will do 
+    - Sure please book a table there fore [7](restaurant-bookpeople) people at [12:15](restaurant-booktime) on [saturday](restaurant-bookday)
+    - No  that will do  Can I book a table for [monday](restaurant-bookday)?
+    - Great! I'd like a table at [frankie and bennys](restaurant-name) for [7](restaurant-bookpeople) people at [14:00](restaurant-booktime) on [friday](restaurant-bookday) 
+    - Yes could you book me a table for two [sunday](restaurant-bookday) at [11:15](restaurant-booktime)?
+    - Okay when you find something I would like to make a reservation for [2](restaurant-bookpeople) people on a [sunday](restaurant-bookday) at [13:30](restaurant-booktime) 
+    - Not in any specific area please  I need to book a table for [3](restaurant-bookpeople) at [14:00](restaurant-booktime) on [saturday](restaurant-bookday) 
+    - Can we do [saturday](restaurant-bookday) at [15:00](restaurant-booktime)?
+    - Sounds great  Could you book me a table for [8](restaurant-bookpeople) on [wednesday](restaurant-bookday) at [15:30](restaurant-booktime)?
+    - Yes  please book me a table for [2](restaurant-bookpeople) people at [12:00](restaurant-booktime) on [wednesday](restaurant-bookday) 
+    - [16:30](restaurant-booktime) please 
+    - I want to make a booking at [fitzbillies restaurant](restaurant-name)  It will be for [8](restaurant-bookpeople) people on [friday](restaurant-bookday) at [12:00](restaurant-booktime) 
+    - Only the best for my family    we'll take the [expensive](restaurant-pricerange) one  Book us a table for [5](restaurant-bookpeople) at [14:00](restaurant-booktime) on [thursday](restaurant-bookday) 
+    - Yes please for [1](restaurant-bookpeople) person [saturday](restaurant-bookday) at [19:15](restaurant-booktime) please 
+    - Great  can you book me a table for [7](restaurant-bookpeople) on [tuesday](restaurant-bookday) at [11:45](restaurant-booktime) and provide me with a [reference](required_info) number?
+    - Yes  please reserve a table for [4](restaurant-bookpeople) on [monday](restaurant-bookday) at [15:15](restaurant-booktime) 
+    - Great! Please book a table for [6](restaurant-bookpeople) at [16:15](restaurant-booktime) on [saturday](restaurant-bookday)
+    - Yes I would like it made for [wednesday](restaurant-bookday) for [7](restaurant-bookpeople) people at [18:30](restaurant-booktime) please 
+    - Yes for [4](restaurant-bookpeople) people at [16:30](restaurant-booktime) on a [saturday](restaurant-bookday)  I will need a [reference](required_info) number as well 
+    - That sounds great  Can I reserve a table for [4](restaurant-bookpeople) at [20:00](restaurant-booktime) on [wednesday](restaurant-bookday)?
+    - Sounds great  can you book a table for [5](restaurant-bookpeople) at [18:00](restaurant-booktime)?
+    - OK  can you book a table for [6](restaurant-bookpeople) at [12:00](restaurant-booktime) on [tuesday](restaurant-bookday) at [the varsity restaurant](restaurant-name)? I will need a [reference](required_info) number too  please 
+    - I'd like to book the [rice boat](restaurant-name) for [1](restaurant-bookpeople) at [11:45](restaurant-booktime) on [monday](restaurant-bookday) 
+    - I would like a reservation for [2](restaurant-bookpeople) to the peking restaurant 
+
+- intent: goodbye
+  examples: |
+    - Thank you so much  That is all I need for now  Have a great day 
+    - Yes  that will be all  Thanks 
+    - Thanks very much!
+    - No thank you  that is all I needed 
+    - That's all  thanks  Goodbye 
+    - No  that's all I need  Thank you 
+    - No that's all I needed  Thank you!
+    - Thanks so much  That's all for today  Bye!
+    - No  that'll be all for today  Thanks a lot  Bye!
+    - Terrific! You are great  please send me all this information to my e-mail  thanks 
+    - No I have everything I wanted to know  Thanks very much 
+    - Thanks  I will 
+    - That's everything I wanted to find out thanks 
+    - Thank you for help  That's everything I needed 
+    - Thank you! Can't wait!
+    - That's all I needed  Thanks
+    - No thanks  That would be all for today  Have a nice day 
+    - Okay thank you  That will be all 
+    - Thanks! That's all I needed today - goodbye!
+    - I think that takes care of everything  Thanks!
+    - That will be all  Thank you very much!
+    - Great thanks so much!
+    - That's all I needed thank you
+    - That's all I needed  Thanks a lot for the help!
+    - No that's all I needed  Thank you!
+    - No  that will be it  Thank you for your help 
+    - Thanks  that's all I need  Have a nice day 
+    - Thank you so much for all of your help  Have a great day 
+    - No Thank you  I think that will be everything today 
+    - Thanks so much  Have a nice day  Bye 
+    - No  but thank you for your help 
+    - That's all I needed today  Thank you!
+    - No thank you  that is all I needed!
+    - No thank you that is all I need for now 
+    - Thank you very much for your help 
+    - No  that's all I need today  Thank you!
+    - Wonderful  Thanks for your help today  Bye 
+    - Thanks  that's all  Good bye 
+    - Thank you  I think that's everything I need 
+    - Thanks  that's all I need  Goodbye 
+    - No  that's all I need  Thanks for your help!
+    - You're welcome! It was great!
+    - Nope  that's all  Thank you for your help!
+    - Thanks  that's all I need  Good bye 
+    - Great  Thank you for your help today  That is all 
+    - That's great  Thank you very much 
+    - That's it for now  Thanks 
+    - No  that's ok  I can take it from here  Thank you for all your help 
+    - I think that takes care of everything  thanks!
+    - Thank you  Have a great day!
+    - That's all I needed  thank you 
+    - Thanks! That's all I needed 
+    - That is wonderful  Thank you for your help  Have a great day 
+    - There is nothing else  Again  thank you  Goodbye 
+    - No  that's it  You've been very helpful  thank you!
+    - Thanks  Looking forward to it 
+    - No  that is all  Thank you 
+    - No thank you  I don't a reservation  That is all the info I need today 
+    - You  too  Thank you  goodbye now 
+    - No  I think that covers it  Thanks so much for your help!
+    - Wonderful  that's all I need to know  Thanks!
+
+- intent: request
+  examples: |
+    - I am interested in the one in the north  Could I have their [postcode](required_info) and [address](required_info)?
+    - Yes  go ahead and book it and please send me the [address](required_info) 
+    - I do not need to book it  What is the [postcode](required_info) and the [area](required_info) please?
+    - Actually  I just need the number and [address](required_info) 
+    - Oh  no  but I do need the [postcode](required_info) [address](required_info) and number 
+    - Excellent! I don't need a table right now  but if you could give me the [address](required_info) and [phone](required_info) number  that would be great 
+    - Sure  pick your favorite and let me have the [address](required_info)  [postcode](required_info)  and [phone](required_info) number please?
+    - Do you have a favorite you could recommend? I will need the [phone](required_info) and [postcode](required_info) and [food](required_info) type also please 
+    - No  can you choose one for me and provide me with the [postcode](required_info) 
+    - What is their [address](required_info)?
+    - What is the [reference](required_info) number for my booking?
+    - Never mind  I'll book the table myself  May I have the [address](required_info) and [postcode](required_info)? And the [phone](required_info) number  while you're at it 
+    - May I have the booking [reference](required_info) number?
+    - Awesome  Can I also get the [area](required_info)  [post code](required_info)  and [phone](required_info) number?
+    - Thanks  I just need the [phone](required_info) number so I can call them 
+    - Never mind  I'm all set  I even have the [reference](required_info) number for my reservation  Thanks for your help - goodbye!
+    - Actually  I won't be needing a reservation just yet  Could you verify the type of [food](required_info) Saigon City serves?
+    - Yes  could I get the restuarant's [phone](required_info) number and [postcode](required_info)?
+    - please get me the you get [phone](required_info) number and [address](required_info)
+    - Can I get the [reference](required_info) number for that reservation?
+
+
+- synonym: gastropub
+  examples: |
+    - gastropubs
+
+- synonym: moderate
+  examples: |
+    - moderately
