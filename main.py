@@ -100,21 +100,23 @@ def isPresent(slot_list, slot):
             return True
     return False 
 
+# Change for the domain that model is being created for (Ignore for Multi domain model)
 def validDialog(dialog):
-    if re.search(r"SNG", dialog["dialogue_id"]) == None or dialog["services"] != ["restaurant"]:
+    if re.search(r"SNG", dialog["dialogue_id"]) == None or dialog["services"] != ["hotel"]:
         return False
     for turn in dialog["turns"]:
         if turn["speaker"] == "SYSTEM":
             continue
-        frames = list(filter(lambda x: x["state"]["active_intent"] != "NONE" and x["service"] != "restaurant", turn["frames"]))
+        frames = list(filter(lambda x: x["state"]["active_intent"] != "NONE" and x["service"] != "hotel", turn["frames"]))
         if frames != []:
             return False
     return True
+
 ####################################################
 #                CONTROL VARIABLES                 #
 ####################################################
 
-# variaveis necessárias para o dominio
+# Domain required variables
 intents = { 
     "inform" : Task("inform"), 
     "request" : Task("request"), 
@@ -127,7 +129,7 @@ responses = ["utter_need_anything", "utter_say_goodbye"]
 training_data = {}
 synonims = {}
 
-# variáveis de controlo
+# Control Variables
 current_intent = "NONE"
 last_frame = {}
 frame_slots = {}
@@ -140,19 +142,21 @@ number_regex = r"(\d+)"
 #                   DIALOGUES LOAD                 #
 ####################################################
 
-# Carregar diálogos dos ficheiros do multiwoz
+# Load MultiWOZ dialogues
 json_file = []
-directory = "resources\\multiwoz\\dev\\"
+directory = "resources\\multiwoz\\train\\"
 for _, _, files in os.walk(directory):
     for file in files:
         with open(directory + file) as f:
-            json_file += list(filter(lambda x: validDialog(x), json.load(f)))
+
+            json_file += json.load(f) # Comment to create domain specific model 
+            #json_file += list(filter(lambda x: validDialog(x), json.load(f))) # Uncomment to create domain specific model 
 
 ####################################################
 #      INTENTS, ENTITIES AND SLOTS DEFINITION      #
 ####################################################
 
-# Percorrer cada diálogo para obter os slots obrigatórios
+# Go threw each dialogue to get the intents, entities, and mandatory slots for each task
 for item in json_file:
     current_intent = ""
     this_turn_slots = {}
@@ -161,7 +165,7 @@ for item in json_file:
 
     for t in range(len(item["turns"])):
         turn = item["turns"][t]
-        # Só se preocupa com as falas do utilizador
+
         if turn["speaker"] == "SYSTEM":
             continue
 
@@ -203,7 +207,7 @@ for item in json_file:
 
             current_intent = turn_best_intent
 
-        # Encontrar os valores dos slots na utterance
+        # Find slot values in utterance
         new_this_turn_slots = this_turn_slots.copy()
         frames = list(filter(lambda x: x["service"] in this_turn_slots.keys(), turn["frames"]))
         for frame in frames:
@@ -239,7 +243,7 @@ for item in json_file:
                         del new_this_turn_slots[frame["service"]]
         this_turn_slots = new_this_turn_slots
 
-        # Obter os slots que são pedidos pelo utilizador.
+        # Get slots asked by user.
         turn["all_requested"] = []
         requested_slots = getRequestedSlots(turn["frames"])
         if requested_slots != []:
@@ -262,25 +266,22 @@ for item in json_file:
         turn["chosen_intents"] = chosen_intents
         turn_intent_key = chosen_intents[0]
 
-        # Uncomment for multiple intents
-        # for index in range(1, len(chosen_intents)):
-        #     turn_intent_key += "+" + chosen_intents[index]
-
         turn["intent_key"] = turn_intent_key
         training_data[turn_intent_key] = [utterance,] if turn_intent_key not in training_data.keys() else training_data[turn_intent_key] + [utterance,]
 
         turn["utterance_slots"] = this_turn_slots
         last_turn = turn
 
-# Computa os slots obrigatórios para uma task ser dada como completa
+# Computes the mandatory slots for each task be marked as complete
 for i in intents.values():
     i.computeSlots()
-    print(i.name, i.mandatory)
-
+    # print(i.name, i.mandatory) # Uncomment to see what are the mandatory slots for each intent 
 
 # ####################################################
 # #         RESPONSES AND ACTIONS DEFINITION         #
 # ####################################################
+
+# Creating actions, responses, stories and rules going threw the MultiWOZ dialogues again 
 
 last_frame = {}
 index = 0
@@ -333,20 +334,9 @@ for item in json_file:
                             story += ["    - {}: {}\n".format(slot, sls[slot][0])]
                     
                     for r in turn["all_requested"]:
-                        story += ["    - requested_info: {}\n".format(r)]
+                        story += ["    - required_info: {}\n".format(r)]
                     
                 story += ["  - action: {}\n".format(action),]
-
-                if "request" in turn["chosen_intents"]:
-                    story += ["  - action: action_get_requested_information\n",]
-            # Uncomment if multiple intents
-            # else:
-            #     story += ["  - intent: request\n".format(),]
-            #     story += ["    entities:\n",]
-            #     for r in turn["all_requested"]:
-            #         story += ["    - requested_info: {}\n".format(r)]
-                    
-            #     story += ["  - action: action_get_requested_information\n",]
 
     if specific_intent == "dont_know":
         continue
@@ -361,8 +351,8 @@ del intents["dont_know"]
 del training_data["dont_know"]
 del intents["NONE"]
 
-# Escrever o domain
-# Os slots estão a ser considerados como entidades
+# Write Rasa domain
+# Slots are considered both Rasa slots and entitities
 with open("Model\\domain.yml", "w") as f:
     intents_string = "\nintents:\n"
     for i in intents.keys():
@@ -394,7 +384,7 @@ with open("Model\\domain.yml", "w") as f:
         
     f.write("version: \"2.0\"\n" + intents_string + entities + slot_string + responses_string + actions_string)
 
-# Escrever a nlu
+# Write NLU training data
 with open("Model\\data\\nlu.yml", "w") as f:
     nlu = "version: \"2.0\"\n\nnlu:\n"
 
@@ -417,7 +407,7 @@ with open("Model\\data\\nlu.yml", "w") as f:
 
     f.write(nlu + synonims_string)
 
-# Escrever as stories
+# Writing Stories
 with open("Model\\data\\stories.yml", "w") as f:
     stories_string = "version: \"2.0\"\n\nstories:\n\n"
     for story in stories:
@@ -426,8 +416,7 @@ with open("Model\\data\\stories.yml", "w") as f:
         stories_string += "\n"
     f.write(stories_string)
 
-#Comment if multiple intents
-#Escrever as rules
+# Writing Rules
 with open("Model\\data\\rules.yml", "w") as f:
     rules_string = '''version: \"2.0\"
 
@@ -437,4 +426,4 @@ rules:
   steps:
   - intent: request
   - action: action_get_requested_information'''
-    f.write(rules_string)
+    f.write(rules_string)   
