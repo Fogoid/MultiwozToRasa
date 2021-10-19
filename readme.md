@@ -1,4 +1,4 @@
-In this repository we present the files used to create a Rasa agent using the MultiWOZ dataset. 
+The files presented in this repository are in the context of the Master Thesis *Making Chatbots for Customer Support: Fast and Serious*. In this files, we present the process we used to create a Rasa agent using the MultiWOZ dataset. If you want details on the implementation check **Chapter 4**. 
 
 To recreate the Rasa model we used for testing, perform the following steps:
 1. Clone this repository
