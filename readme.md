@@ -14,7 +14,7 @@ In case you want to run the model:
 4. Change the text of the responses in the `domain.yml` file (We present our responses section of the domain below for the restaurant domain).
 5. Download the `db` folder available in https://github.com/budzianowski/multiwoz
 6. Implement the actions in the file `/actions/actions.py` (We present the logic used below for the Restaurant domain and for the Hotel domain).
-8. Use `Rasa train`.
+8. Use `rasa train`.
 10. You can now start the action server using `rasa run actions` and interact with the model by using `rasa shell`.
 
 ### Model Configuration
