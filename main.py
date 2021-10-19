@@ -102,12 +102,12 @@ def isPresent(slot_list, slot):
 
 # Change for the domain that model is being created for (Ignore for Multi domain model)
 def validDialog(dialog):
-    if re.search(r"SNG", dialog["dialogue_id"]) == None or dialog["services"] != ["hotel"]:
+    if re.search(r"SNG", dialog["dialogue_id"]) == None or dialog["services"] != ["restaurant"]:
         return False
     for turn in dialog["turns"]:
         if turn["speaker"] == "SYSTEM":
             continue
-        frames = list(filter(lambda x: x["state"]["active_intent"] != "NONE" and x["service"] != "hotel", turn["frames"]))
+        frames = list(filter(lambda x: x["state"]["active_intent"] != "NONE" and x["service"] != "restaurant", turn["frames"]))
         if frames != []:
             return False
     return True
