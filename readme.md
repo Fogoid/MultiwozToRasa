@@ -2,7 +2,7 @@ The files presented in this repository are in the context of the Master Thesis *
 
 To recreate the Rasa model we used for testing, perform the following steps:
 1. Clone this repository
-2. Create a Resources folder, and put inside the MultiWOZ dataset, in a folder called multiwoz (In this work, we used MultiWOZ 2.2 available in https://github.com/budzianowski/multiwoz/tree/master/data/MultiWOZ_2.2)
+2. Create a Resources folder. Inside, put the MultiWOZ dataset, in a folder called multiwoz (In this work, we used MultiWOZ 2.2 available in https://github.com/budzianowski/multiwoz/tree/master/data/MultiWOZ_2.2)
 3. Create a folder called Model, and inside, use `rasa init` to create a basic agent.
 5. (Optional) If you want to create a single domain model instead of multi domain, comment line 152 of `main.py` file, and uncomment line 153
 6. (Optional) If you want any other domain besides the Restaurant model, go to the function `ValidDialog` and change any references to `restaurant` to the other domain you pretend 
